@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "01c9d67a-a093-4dab-80a2-df997cfecdfa-44",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/01c9d67a-a093-4dab-80a2-df997cfecdfa-44",
+  "id" : "9194ebe8-21fa-4444-a341-ef1fbe8c6a15-44",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/9194ebe8-21fa-4444-a341-ef1fbe8c6a15-44",
   "name" : "UnionSGStructureMapAndSGStructureMap",
   "title" : "Union of SMART Guidelines StructureMap And SMART Guidelines StructureMap",
   "status" : "draft",
-  "date" : "2024-11-20T07:42:32+00:00",
+  "date" : "2024-11-20T08:07:32+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "StructureMap",

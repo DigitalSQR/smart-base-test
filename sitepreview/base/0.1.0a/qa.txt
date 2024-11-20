@@ -3,7 +3,7 @@ Base : Validation Results
 
 err = 1, warn = 3, info = 15
 IG Publisher Version: 1.7.3
-Generated Wed Nov 20 07:41:54 UTC 2024. FHIR version 4.0.1 for smart.who.int.base#0.1.0a (canonical = http://smart.who.int/base)
+Generated Wed Nov 20 08:06:59 UTC 2024. FHIR version 4.0.1 for smart.who.int.base#0.1.0a (canonical = http://smart.who.int/base)
  Build Errors : 42 / 0 / 0
  /workspace/temp/smart.who.int.base#0.1.0a/fsh-generated/resources/ImplementationGuide-smart.who.int.base : 0 / 1 / 17
  /workspace/temp/smart.who.int.base#0.1.0a/fsh-generated/resources/StructureDefinition-Markdown : 0 / 2 / 1
