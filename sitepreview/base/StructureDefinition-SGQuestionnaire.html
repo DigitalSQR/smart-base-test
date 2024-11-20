@@ -1,44 +1,40 @@
-<!-- get modelType -->
-
-
-
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<!-- get modelType --><?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>SMART Guidelines Questionnaire - SMART Base v0.1.0</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>SMART Guidelines Questionnaire - SMART Base v0.1.0a</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
 
-    <link href="fhir.css" rel="stylesheet"/>
-    <link href="assets/css/fa-all.css" rel="stylesheet" type="text/css" />
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="fhir.css"/>
+    <link rel="stylesheet" href="assets/css/fa-all.css" type="text/css"/>
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
 
-    <!-- Project extras -->
-    <link href="assets/css/project.css" rel="stylesheet"/>
-    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
-    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
-  	<link href="assets/css/prism.css" rel="stylesheet" />
-    <!-- Placeholder for child template CSS declarations -->
-    <link href="assets/css/who.css" rel="stylesheet"/>
-    <link href="assets/css/lforms.min.css" rel="stylesheet"/>
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+    <link rel="stylesheet" href="assets/css/who.css"/>
+    <link rel="stylesheet" href="assets/css/lforms.min.css"/>
 
 
-    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
-    <![endif]-->
+    <![endif] -->
 
-    <!-- Favicons -->
-    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
-    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
-    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
     <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
@@ -48,26 +44,26 @@
 
     <style type="text/css">h2{--heading-prefix:"5.10"}
     h3,h4,h5,h6{--heading-prefix:"5.10"}</style>
-    <div id="segment-header" class="segment">  <!-- segment-header -->
+    <div id="segment-header" class="segment">    <!-- segment-header -->
 
-      <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
         <div id="stripe"> </div>
-        <div class="container">  <!-- container -->
-          <!-- HEADER CONTENT -->
+        <div class="container">    <!-- container -->
+            <!-- HEADER CONTENT -->
   
           <nav class="navbar navbar-inverse">
-            <!--status-bar-->
+              <!-- status-bar -->
             <div class="container">
-              <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
                 <span class="icon-bar"> </span>
                 <span class="icon-bar"> </span>
                 <span class="icon-bar"> </span>
               </button>
-              <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+              <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
               <div class="nav-collapse collapse navbar-inverse-collapse">
-                <!-- menu.xml  -->
+                  <!-- menu.xml -->
 
-<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+<ul class="nav navbar-nav">
   <li>
     <a href="index.html">Home</a>
   </li>
@@ -85,74 +81,74 @@
     </ul>
   </li>
 </ul>
-              </div>  <!-- /.nav-collapse -->
+              </div>    <!-- /.nav-collapse -->
 
-              <div class="sf_colsIn col-md-8  navbar-right-container" data-sf-element="LanguageSelectorSearch" data-placeholder-label="Language Selector and Search" style="display: flex; justify-content: flex-end; align-items: center;">
-                <!-- This div will be pushed to the right -->
-                <div class="language-selector" style="margin-left: auto; background-color: #00477d; color: white;">
+              <div data-placeholder-label="Language Selector and Search" style="display: flex; justify-content: flex-end; align-items: center;" class="sf_colsIn col-md-8  navbar-right-container" data-sf-element="LanguageSelectorSearch">
+                  <!-- This div will be pushed to the right -->
+                <div style="margin-left: auto; background-color: #00477d; color: white;" class="language-selector">
                   <i class="fa fa-language fa-lg"></i>
                   <label for="language-selector"> </label>
-                  <select onChange="openLink(value)" id="language-selector" name="language-selector">
-                    <option disabled selected>Select language</option>
+                  <select onChange="openLink(value)" name="language-selector" id="language-selector">
+                    <option disabled="null" selected="null">Select language</option>
                     <option value="en" class="selected">English</option>
                   </select>
                   <i class="fas fa-angle-down"></i>
                 </div>
-                <!-- Search Content -->
+                  <!-- Search Content -->
               </div>
-            </div>  <!-- /.container -->
-          </nav>  <!-- /.navbar -->
-        <!-- /HEADER CONTENT -->
-        </div>  <!-- /container -->
-      </div>  <!-- /segment-navbar -->
+            </div>    <!-- /.container -->
+          </nav>    <!-- /.navbar -->
+          <!-- /HEADER CONTENT -->
+        </div>    <!-- /container -->
+      </div>    <!-- /segment-navbar -->
       
 
-      <div class="container" style=" justify-content: space-between; align-items: left;">
+      <div style=" justify-content: space-between; align-items: left;" class="container">
 
-        <!-- Placeholder for child template header declarations -->
+          <!-- Placeholder for child template header declarations -->
 <div id="project-nav">
-    <a id="who-logo" no-external="true" href="index.html">
+    <a no-external="true" id="who-logo" href="index.html">
         
     </a>
 </div>
 
  <div id="family-nav">
-  <a id="fhir-logo" no-external="true" href="http://hl7.org/fhir">  </a>
+  <a no-external="true" id="fhir-logo" href="http://hl7.org/fhir">  </a>
 </div> 
 
 
         <div id="ig-status" class="ig-status-draft">
           <p><span style="font-size:12pt;font-weight:bold">SMART Base</span>
             <br/>
-            <span style="display:inline-block;">0.1.0 - ci-build
+            <span style="display:inline-block;">0.1.0a - ci-build
 
 
             </span>
           </p>
         </div>
-      </div> <!-- /container -->
-    </div>  <!-- /segment-header -->
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
 
 
-    <!--status-bar-->
+      <!-- status-bar -->
 
-    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
-      <div class="container">  <!-- container -->
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>SMART Guidelines Questionnaire</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>SMART Guidelines Questionnaire</b></li>
 
         </ul>
-      </div>  <!-- /container -->
-    </div>  <!-- /segment-breadcrumb -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
 
     <a name="top"> </a>
-    <div id="segment-content" class="segment">  <!-- segment-content -->
-      <div class="container">  <!-- container -->
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the SMART Base (v0.1.0: Releases Draft) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://smart.who.int/base/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+    <!-- ReleaseHeader --><p id="publish-box">This page is part of the SMART Base (v0.1.0a: Releases Draft) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://smart.who.int/base/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   
 
 
@@ -229,10 +225,10 @@
   <table class="colsd">
 
     <tr>
-      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://smart.who.int/base/StructureDefinition/SGQuestionnaire<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://smart.who.int/base/StructureDefinition/SGQuestionnaire"/></span>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://smart.who.int/base/StructureDefinition/SGQuestionnaire<button data-clipboard-text="http://smart.who.int/base/StructureDefinition/SGQuestionnaire" title="Click to copy URL" class="btn-copy"></button></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://smart.who.int/base/StructureDefinition/SGQuestionnaire|0.1.0"/></span>
+      <span class="copy-text">0.1.0a<button data-clipboard-text="http://smart.who.int/base/StructureDefinition/SGQuestionnaire|0.1.0a" title="Click to copy versioned URL" class="btn-copy"></button></span>
       </td>
     </tr>
 
@@ -248,7 +244,7 @@
         
           Draft
           
-            as of 2024-09-20
+            as of 2024-11-20
           
         
       </td>
@@ -270,7 +266,7 @@
 
 
 
-<!-- insert intro if present -->
+  <!-- insert intro if present -->
 
 
 
@@ -281,7 +277,7 @@
 </ul>
 
 
-  <!-- no uri -->
+    <!-- no uri -->
   <a name="profile"> </a>
   <h3 id="profile">Formal Views of Profile Content</h3>
   <p>
@@ -299,19 +295,19 @@
         <a href="#tabs-snap">Snapshot Table</a>
       </li>
 
-<!--      <li>
+  <!-- <li>
         <a href="#tabs-xml">Pseudo-XML</a>
-      </li>-->
+      </li> -->
 
 
-<!--      <li>
+  <!-- <li>
         <a href="#tabs-json">Pseudo-JSON</a>
-      </li>-->
+      </li> -->
 
 
-      <!--<li>
+        <!-- <li>
         <a href="#tabs-ttl">Pseudo-TTL</a>
-      </li>-->
+      </li> -->
 
       <li>
         <a href="#tabs-summ">Statistics/References</a>
@@ -347,11 +343,11 @@
 
 <tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table>
           <a name="tx"> </a>
-          <!--Terminology Bindings heading in the fragment -->
+            <!-- Terminology Bindings heading in the fragment -->
           
         
           
-          <!-- 218 is size of empty table -->
+            <!-- 218 is size of empty table -->
           
         </div>
       </div>
@@ -395,7 +391,7 @@
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">How to compare versions<br/><span style="font-weight:bold">URL: </span><a href="http://hl7.org/fhir/extensions/5.1.0/StructureDefinition-artifact-versionAlgorithm.html">http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm</a><br/><span style="font-weight:bold">Binding: </span><a href="http://hl7.org/fhir/R5/valueset-version-algorithm.html" title="http://hl7.org/fhir/ValueSet/version-algorithm">VersionAlgorithm</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.">extensible</a>)<br/></td></tr>
+<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a name="l762">​</a>How to compare versions<br/><span style="font-weight:bold">URL: </span><a href="http://hl7.org/fhir/extensions/5.1.0/StructureDefinition-artifact-versionAlgorithm.html">http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm</a><br/><span style="font-weight:bold">Binding: </span><a href="version-algorithm.html">version-algorithm</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.">extensible</a>)<br/></td></tr>
 
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="abd"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck124.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: white; background-color: inherit" title="Slice Item" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SGQuestionnaire-definitions.html#Questionnaire.extension:versionPolicy" title="Extension URL = http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy">versionPolicy</a><a name="k-Questionnaire.extension.5"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td>
@@ -460,19 +456,19 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Natural language description of the questionnaire</td></tr>
 
 <tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table>
-          <!--Terminology Bindings heading in the fragment -->
+            <!-- Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
 <table class="list">
 <tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>Questionnaire.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="The lifecycle status of an artifact."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-publication-status.html">PublicationStatus</a><div><code>http://hl7.org/fhir/ValueSet/publication-status|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/publication-status|4.0.1"></button></div><div>from the FHIR Standard</div></td></tr>
+<tr><td>Questionnaire.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="The lifecycle status of an artifact."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-publication-status.html">PublicationStatus</a><div><code>http://hl7.org/fhir/ValueSet/publication-status|4.0.1</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/publication-status|4.0.1" title="Click to copy URL" class="btn-copy"></button></div><div>from the FHIR Standard</div></td></tr>
 </table>
 
         
           
-          <!-- 218 is size of empty table -->
+            <!-- 218 is size of empty table -->
           
             <a name="inv-key"> </a>
-            <!--Constraints  heading in the fragment -->
+              <!-- Constraints  heading in the fragment -->
             <h4>Constraints</h4>
 <table class="list">
 <tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
@@ -526,7 +522,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Language of the resource content<br/><span style="font-weight:bold">Binding: </span><a href="http://hl7.org/fhir/R4/valueset-languages.html" title="http://hl7.org/fhir/ValueSet/languages">CommonLanguages</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.">preferred</a>): A human language.<br/><br/>
 <table class="grid"><tr><td style="font-size: 11px"><b>Additional Bindings</b></td><td style="font-size: 11px">Purpose</td></tr>
-<tr><td style="font-size: 11px"><a href="http://hl7.org/fhir/R5/valueset-all-languages.html" title="http://hl7.org/fhir/ValueSet/all-languages">AllLanguages</a></td>
+<tr><td style="font-size: 11px"><a href="http://hl7.org/fhir/R4/valueset-all-languages.html" title="http://hl7.org/fhir/ValueSet/all-languages">AllLanguages</a></td>
 <td style="font-size: 11px"><a href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html" title="A required binding, for use when the binding strength is 'extensible' or 'preferred'">Max Binding</a></td></tr></table></td></tr>
 
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="a4."><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SGQuestionnaire-definitions.html#Questionnaire.text" title="A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.">text</a><a name="Questionnaire.text"> </a></td>
@@ -563,7 +559,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">How to compare versions<br/><span style="font-weight:bold">URL: </span><a href="http://hl7.org/fhir/extensions/5.1.0/StructureDefinition-artifact-versionAlgorithm.html">http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm</a><br/><span style="font-weight:bold">Binding: </span><a href="http://hl7.org/fhir/R5/valueset-version-algorithm.html" title="http://hl7.org/fhir/ValueSet/version-algorithm">VersionAlgorithm</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.">extensible</a>)<br/></td></tr>
+<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a name="l1636">​</a>How to compare versions<br/><span style="font-weight:bold">URL: </span><a href="http://hl7.org/fhir/extensions/5.1.0/StructureDefinition-artifact-versionAlgorithm.html">http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm</a><br/><span style="font-weight:bold">Binding: </span><a href="version-algorithm.html">version-algorithm</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.">extensible</a>)<br/></td></tr>
 
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="a6.d"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck124.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Slice Item" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SGQuestionnaire-definitions.html#Questionnaire.extension:versionPolicy" title="Extension URL = http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy">versionPolicy</a><a name="Questionnaire.extension.5"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td>
@@ -1100,7 +1096,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Nested questionnaire items<br/></td></tr>
 
 <tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table>
-          <!--Terminology Bindings heading in the fragment -->
+            <!-- Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
 <table class="list">
 <tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
@@ -1113,33 +1109,33 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
   </tr>
   <tr>
     <td style="font-size: 11px">
-      <a href="http://hl7.org/fhir/R5/valueset-all-languages.html" title="http://hl7.org/fhir/ValueSet/all-languages">AllLanguages</a>
+      <a href="http://hl7.org/fhir/R4/valueset-all-languages.html" title="http://hl7.org/fhir/ValueSet/all-languages">AllLanguages</a>
     </td>
     <td style="font-size: 11px">
       <a href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html" title="A required binding, for use when the binding strength is 'extensible' or 'preferred'">Max Binding</a>
     </td>
   </tr>
 </table>
-<div><code>http://hl7.org/fhir/ValueSet/languages</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/languages"></button></div><div>from the FHIR Standard</div></td></tr>
-<tr><td>Questionnaire.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="The lifecycle status of an artifact."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-publication-status.html">PublicationStatus</a><div><code>http://hl7.org/fhir/ValueSet/publication-status|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/publication-status|4.0.1"></button></div><div>from the FHIR Standard</div></td></tr>
-<tr><td>Questionnaire.subjectType</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="One of the resource types defined as part of this version of FHIR."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-resource-types.html">ResourceType</a><div><code>http://hl7.org/fhir/ValueSet/resource-types|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/resource-types|4.0.1"></button></div><div>from the FHIR Standard</div></td></tr>
-<tr><td>Questionnaire.jurisdiction</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="Countries and regions within which this artifact is targeted for use."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-jurisdiction.html">Jurisdiction ValueSet</a><div><code>http://hl7.org/fhir/ValueSet/jurisdiction</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/jurisdiction"></button></div><div>from the FHIR Standard</div></td></tr>
-<tr><td>Questionnaire.code</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes for questionnaires, groups and individual questions."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-questionnaire-questions.html">QuestionnaireQuestionCodes</a> (a valid code from <a href="https://loinc.org/">LOINC</a>)<div><code>http://hl7.org/fhir/ValueSet/questionnaire-questions</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/questionnaire-questions"></button></div><div>from the FHIR Standard</div></td></tr>
-<tr><td>Questionnaire.item.code</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes for questionnaires, groups and individual questions."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-questionnaire-questions.html">QuestionnaireQuestionCodes</a> (a valid code from <a href="https://loinc.org/">LOINC</a>)<div><code>http://hl7.org/fhir/ValueSet/questionnaire-questions</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/questionnaire-questions"></button></div><div>from the FHIR Standard</div></td></tr>
-<tr><td>Questionnaire.item.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="Distinguishes groups from questions and display text and indicates data type for questions."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-item-type.html">QuestionnaireItemType</a><div><code>http://hl7.org/fhir/ValueSet/item-type|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/item-type|4.0.1"></button></div><div>from the FHIR Standard</div></td></tr>
-<tr><td>Questionnaire.item.enableWhen.operator</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="The criteria by which a question is enabled."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-questionnaire-enable-operator.html">QuestionnaireItemOperator</a><div><code>http://hl7.org/fhir/ValueSet/questionnaire-enable-operator|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/questionnaire-enable-operator|4.0.1"></button></div><div>from the FHIR Standard</div></td></tr>
-<tr><td>Questionnaire.item.enableWhen.answer[x]</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Allowed values to answer questions."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-questionnaire-answers.html">QuestionnaireAnswerCodes</a> (a valid code from <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>)<div><code>http://hl7.org/fhir/ValueSet/questionnaire-answers</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/questionnaire-answers"></button></div><div>from the FHIR Standard</div></td></tr>
-<tr><td>Questionnaire.item.enableBehavior</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="Controls how multiple enableWhen values are interpreted -  whether all or any must be true."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-questionnaire-enable-behavior.html">EnableWhenBehavior</a><div><code>http://hl7.org/fhir/ValueSet/questionnaire-enable-behavior|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/questionnaire-enable-behavior|4.0.1"></button></div><div>from the FHIR Standard</div></td></tr>
-<tr><td>Questionnaire.item.answerOption.value[x]</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Allowed values to answer questions."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-questionnaire-answers.html">QuestionnaireAnswerCodes</a> (a valid code from <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>)<div><code>http://hl7.org/fhir/ValueSet/questionnaire-answers</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/questionnaire-answers"></button></div><div>from the FHIR Standard</div></td></tr>
-<tr><td>Questionnaire.item.initial.value[x]</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Allowed values to answer questions."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-questionnaire-answers.html">QuestionnaireAnswerCodes</a> (a valid code from <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>)<div><code>http://hl7.org/fhir/ValueSet/questionnaire-answers</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/questionnaire-answers"></button></div><div>from the FHIR Standard</div></td></tr>
+<div><code>http://hl7.org/fhir/ValueSet/languages</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/languages" title="Click to copy URL" class="btn-copy"></button></div><div>from the FHIR Standard</div></td></tr>
+<tr><td>Questionnaire.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="The lifecycle status of an artifact."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-publication-status.html">PublicationStatus</a><div><code>http://hl7.org/fhir/ValueSet/publication-status|4.0.1</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/publication-status|4.0.1" title="Click to copy URL" class="btn-copy"></button></div><div>from the FHIR Standard</div></td></tr>
+<tr><td>Questionnaire.subjectType</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="One of the resource types defined as part of this version of FHIR."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-resource-types.html">ResourceType</a><div><code>http://hl7.org/fhir/ValueSet/resource-types|4.0.1</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/resource-types|4.0.1" title="Click to copy URL" class="btn-copy"></button></div><div>from the FHIR Standard</div></td></tr>
+<tr><td>Questionnaire.jurisdiction</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="Countries and regions within which this artifact is targeted for use."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-jurisdiction.html">Jurisdiction ValueSet</a><div><code>http://hl7.org/fhir/ValueSet/jurisdiction</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/jurisdiction" title="Click to copy URL" class="btn-copy"></button></div><div>from the FHIR Standard</div></td></tr>
+<tr><td>Questionnaire.code</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes for questionnaires, groups and individual questions."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-questionnaire-questions.html">QuestionnaireQuestionCodes</a> (a valid code from <a href="https://loinc.org/">LOINC</a>)<div><code>http://hl7.org/fhir/ValueSet/questionnaire-questions</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/questionnaire-questions" title="Click to copy URL" class="btn-copy"></button></div><div>from the FHIR Standard</div></td></tr>
+<tr><td>Questionnaire.item.code</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes for questionnaires, groups and individual questions."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-questionnaire-questions.html">QuestionnaireQuestionCodes</a> (a valid code from <a href="https://loinc.org/">LOINC</a>)<div><code>http://hl7.org/fhir/ValueSet/questionnaire-questions</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/questionnaire-questions" title="Click to copy URL" class="btn-copy"></button></div><div>from the FHIR Standard</div></td></tr>
+<tr><td>Questionnaire.item.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="Distinguishes groups from questions and display text and indicates data type for questions."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-item-type.html">QuestionnaireItemType</a><div><code>http://hl7.org/fhir/ValueSet/item-type|4.0.1</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/item-type|4.0.1" title="Click to copy URL" class="btn-copy"></button></div><div>from the FHIR Standard</div></td></tr>
+<tr><td>Questionnaire.item.enableWhen.operator</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="The criteria by which a question is enabled."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-questionnaire-enable-operator.html">QuestionnaireItemOperator</a><div><code>http://hl7.org/fhir/ValueSet/questionnaire-enable-operator|4.0.1</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/questionnaire-enable-operator|4.0.1" title="Click to copy URL" class="btn-copy"></button></div><div>from the FHIR Standard</div></td></tr>
+<tr><td>Questionnaire.item.enableWhen.answer[x]</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Allowed values to answer questions."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-questionnaire-answers.html">QuestionnaireAnswerCodes</a> (a valid code from <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>)<div><code>http://hl7.org/fhir/ValueSet/questionnaire-answers</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/questionnaire-answers" title="Click to copy URL" class="btn-copy"></button></div><div>from the FHIR Standard</div></td></tr>
+<tr><td>Questionnaire.item.enableBehavior</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="Controls how multiple enableWhen values are interpreted -  whether all or any must be true."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-questionnaire-enable-behavior.html">EnableWhenBehavior</a><div><code>http://hl7.org/fhir/ValueSet/questionnaire-enable-behavior|4.0.1</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/questionnaire-enable-behavior|4.0.1" title="Click to copy URL" class="btn-copy"></button></div><div>from the FHIR Standard</div></td></tr>
+<tr><td>Questionnaire.item.answerOption.value[x]</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Allowed values to answer questions."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-questionnaire-answers.html">QuestionnaireAnswerCodes</a> (a valid code from <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>)<div><code>http://hl7.org/fhir/ValueSet/questionnaire-answers</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/questionnaire-answers" title="Click to copy URL" class="btn-copy"></button></div><div>from the FHIR Standard</div></td></tr>
+<tr><td>Questionnaire.item.initial.value[x]</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Allowed values to answer questions."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-questionnaire-answers.html">QuestionnaireAnswerCodes</a> (a valid code from <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>)<div><code>http://hl7.org/fhir/ValueSet/questionnaire-answers</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/questionnaire-answers" title="Click to copy URL" class="btn-copy"></button></div><div>from the FHIR Standard</div></td></tr>
 </table>
 
         
           
-          <!-- 218 is size of empty table -->
+            <!-- 218 is size of empty table -->
           
             <a name="inv-snap"> </a>
-            <!--Constraints  heading in the fragment -->
+              <!-- Constraints  heading in the fragment -->
             <h4>Constraints</h4>
 <table class="list">
 <tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
@@ -1153,13 +1149,13 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr><td>que-0</td><td>warning</td><td>Questionnaire</td><td>Name should be usable as an identifier for the module by machine processing applications such as code generation<br/>: name.matches('[A-Z]([A-Za-z0-9_]){0,254}')</td><td></td></tr>
 <tr><td>que-1</td><td>error</td><td>Questionnaire.item</td><td>Group items must have nested items, display items cannot have nested items<br/>: (type='group' implies item.empty().not()) and (type.trace('type')='display' implies item.trace('item').empty())</td><td></td></tr>
 <tr><td>que-2</td><td>error</td><td>Questionnaire</td><td>The link ids for groups and questions must be unique within the questionnaire<br/>: descendants().linkId.isDistinct()</td><td></td></tr>
-<tr><td>que-3</td><td>error</td><td>Questionnaire.item</td><td>Display items cannot have a &quot;code&quot; asserted<br/>: type!='display' or code.empty()</td><td></td></tr>
+<tr><td>que-3</td><td>error</td><td>Questionnaire.item</td><td>Display items cannot have a "code" asserted<br/>: type!='display' or code.empty()</td><td></td></tr>
 <tr><td>que-4</td><td>error</td><td>Questionnaire.item</td><td>A question cannot have both answerOption and answerValueSet<br/>: answerOption.empty() or answerValueSet.empty()</td><td></td></tr>
 <tr><td>que-5</td><td>error</td><td>Questionnaire.item</td><td>Only 'choice' and 'open-choice' items can have answerValueSet<br/>: (type ='choice' or type = 'open-choice' or type = 'decimal' or type = 'integer' or type = 'date' or type = 'dateTime' or type = 'time' or type = 'string' or type = 'quantity') or (answerValueSet.empty() and answerOption.empty())</td><td></td></tr>
 <tr><td>que-6</td><td>error</td><td>Questionnaire.item</td><td>Required and repeat aren't permitted for display items<br/>: type!='display' or (required.empty() and repeats.empty())</td><td></td></tr>
 <tr><td>que-7</td><td>error</td><td>Questionnaire.item.enableWhen</td><td>If the operator is 'exists', the value must be a boolean<br/>: operator = 'exists' implies (answer is Boolean)</td><td></td></tr>
 <tr><td>que-8</td><td>error</td><td>Questionnaire.item</td><td>Initial values can't be specified for groups or display items<br/>: (type!='group' and type!='display') or initial.empty()</td><td></td></tr>
-<tr><td>que-9</td><td>error</td><td>Questionnaire.item</td><td>Read-only can't be specified for &quot;display&quot; items<br/>: type!='display' or readOnly.empty()</td><td></td></tr>
+<tr><td>que-9</td><td>error</td><td>Questionnaire.item</td><td>Read-only can't be specified for "display" items<br/>: type!='display' or readOnly.empty()</td><td></td></tr>
 <tr><td>que-10</td><td>error</td><td>Questionnaire.item</td><td>Maximum length can only be declared for simple question types<br/>: (type in ('boolean' | 'decimal' | 'integer' | 'string' | 'text' | 'url' | 'open-choice')) or maxLength.empty()</td><td></td></tr>
 <tr><td>que-11</td><td>error</td><td>Questionnaire.item</td><td>If one or more answerOption is present, initial[x] must be missing<br/>: answerOption.empty() or initial.empty()</td><td></td></tr>
 <tr><td>que-12</td><td>error</td><td>Questionnaire.item</td><td>If there are more than one enableWhen, enableBehavior must be specified<br/>: enableWhen.count() &gt; 2 implies enableBehavior.exists()</td><td></td></tr>
@@ -1171,7 +1167,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       </div>
     </div>
 
-<!--    <a name="tabs-xml"> </a>
+  <!-- <a name="tabs-xml"> </a>
     <div id="tabs-xml">
       <div id="xml">
         <div id="xml-inner">
@@ -1179,10 +1175,10 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 
         </div>
       </div>
-    </div>-->
+    </div> -->
 
 
-<!--    <a name="tabs-json"> </a>
+  <!-- <a name="tabs-json"> </a>
     <div id="tabs-json">
       <div id="json">
         <div id="json-inner">
@@ -1207,8 +1203,8 @@ Not handled yet: complex extension http://hl7.org/fhir/StructureDefinition/cqf-a
       { // <span style="color: navy; opacity: 0.8"> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children; ext-1: Must have either extensions or value[x], not both"><b>C?</b></span> <span style="color: brown" title="This element is an array in the base standard, but the profile only allows on element"><b>Only One!</b></span> How to compare versions</span>
         "url": "<a href="http://hl7.org/fhir/extensions/5.1.0/StructureDefinition-artifact-versionAlgorithm.html">http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm</a>",
 <span style="color: Gray">// value[x]: <span style="color: navy; opacity: 0.8">Value of extension</span>. One of these 2:</span>
-        "<a href="StructureDefinition-SGQuestionnaire.html#Questionnaire.extension.valueString" title="Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R5/extensibility.html) for a list)" class="dict"><span style="text-decoration: underline">valueString</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">Value of extension</a></span>
-        "<a href="StructureDefinition-SGQuestionnaire.html#Questionnaire.extension.valueCoding" title="Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R5/extensibility.html) for a list)" class="dict"><span style="text-decoration: underline">valueCoding</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></span>} <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">Value of extension</a></span>
+        "<a href="StructureDefinition-SGQuestionnaire.html#Questionnaire.extension.valueString" title="Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R5/extensibility.html) for a list)" class="dict"><span style="text-decoration: underline">valueString</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/ValueSet/version-algorithm.html" style="color: navy">Value of extension</a></span>
+        "<a href="StructureDefinition-SGQuestionnaire.html#Questionnaire.extension.valueCoding" title="Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R5/extensibility.html) for a list)" class="dict"><span style="text-decoration: underline">valueCoding</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></span>} <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/ValueSet/version-algorithm.html" style="color: navy">Value of extension</a></span>
       },
       { // <span style="color: navy; opacity: 0.8"> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children; ext-1: Must have either extensions or value[x], not both"><b>C?</b></span> <span style="color: brown" title="This element is an array in the base standard, but the profile only allows on element"><b>Only One!</b></span> metadata | strict</span>
         "url": "<a href="http://hl7.org/fhir/extensions/5.1.0/StructureDefinition-artifact-versionPolicy.html">http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy</a>",
@@ -1311,10 +1307,10 @@ Not handled yet: complex extension http://hl7.org/fhir/StructureDefinition/cqf-a
 
         </div>
       </div>
-    </div>-->
+    </div> -->
 
 
-    <!--<a name="tabs-ttl"> </a>
+      <!-- <a name="tabs-ttl"> </a>
     <div id="tabs-ttl">
       <div id="ttl">
         <div id="ttl-inner">
@@ -1322,7 +1318,7 @@ Not handled yet: complex extension http://hl7.org/fhir/StructureDefinition/cqf-a
 
         </div>
       </div>
-    </div>-->
+    </div> -->
 
     <a name="tabs-summ"> </a>
     <div id="tabs-summ">
@@ -1368,11 +1364,11 @@ Summary
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Name of the publisher (organization or individual)</span></td></tr>
 
 <tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table>
-          <!--Terminology Bindings heading in the fragment -->
+            <!-- Terminology Bindings heading in the fragment -->
           
         
           
-          <!-- 218 is size of empty table -->
+            <!-- 218 is size of empty table -->
           
         </div>
       </div>
@@ -1416,7 +1412,7 @@ Summary
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">How to compare versions<br/><span style="font-weight:bold">URL: </span><a href="http://hl7.org/fhir/extensions/5.1.0/StructureDefinition-artifact-versionAlgorithm.html">http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm</a><br/><span style="font-weight:bold">Binding: </span><a href="http://hl7.org/fhir/R5/valueset-version-algorithm.html" title="http://hl7.org/fhir/ValueSet/version-algorithm">VersionAlgorithm</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.">extensible</a>)<br/></td></tr>
+<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a name="l4917">​</a>How to compare versions<br/><span style="font-weight:bold">URL: </span><a href="http://hl7.org/fhir/extensions/5.1.0/StructureDefinition-artifact-versionAlgorithm.html">http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm</a><br/><span style="font-weight:bold">Binding: </span><a href="version-algorithm.html">version-algorithm</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.">extensible</a>)<br/></td></tr>
 
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="abd"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck124.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: white; background-color: inherit" title="Slice Item" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SGQuestionnaire-definitions.html#Questionnaire.extension:versionPolicy" title="Extension URL = http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy">versionPolicy</a><a name="ka-Questionnaire.extension.5"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td>
@@ -1481,19 +1477,19 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Natural language description of the questionnaire</td></tr>
 
 <tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table>
-          <!--Terminology Bindings heading in the fragment -->
+            <!-- Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
 <table class="list">
 <tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>Questionnaire.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="The lifecycle status of an artifact."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-publication-status.html">PublicationStatus</a><div><code>http://hl7.org/fhir/ValueSet/publication-status|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/publication-status|4.0.1"></button></div><div>from the FHIR Standard</div></td></tr>
+<tr><td>Questionnaire.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="The lifecycle status of an artifact."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-publication-status.html">PublicationStatus</a><div><code>http://hl7.org/fhir/ValueSet/publication-status|4.0.1</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/publication-status|4.0.1" title="Click to copy URL" class="btn-copy"></button></div><div>from the FHIR Standard</div></td></tr>
 </table>
 
         
           
-          <!-- 218 is size of empty table -->
+            <!-- 218 is size of empty table -->
           
             <a name="inv-all-key"> </a>
-            <!--Constraints  heading in the fragment -->
+              <!-- Constraints  heading in the fragment -->
             <h4>Constraints</h4>
 <table class="list">
 <tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
@@ -1547,7 +1543,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Language of the resource content<br/><span style="font-weight:bold">Binding: </span><a href="http://hl7.org/fhir/R4/valueset-languages.html" title="http://hl7.org/fhir/ValueSet/languages">CommonLanguages</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.">preferred</a>): A human language.<br/><br/>
 <table class="grid"><tr><td style="font-size: 11px"><b>Additional Bindings</b></td><td style="font-size: 11px">Purpose</td></tr>
-<tr><td style="font-size: 11px"><a href="http://hl7.org/fhir/R5/valueset-all-languages.html" title="http://hl7.org/fhir/ValueSet/all-languages">AllLanguages</a></td>
+<tr><td style="font-size: 11px"><a href="http://hl7.org/fhir/R4/valueset-all-languages.html" title="http://hl7.org/fhir/ValueSet/all-languages">AllLanguages</a></td>
 <td style="font-size: 11px"><a href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html" title="A required binding, for use when the binding strength is 'extensible' or 'preferred'">Max Binding</a></td></tr></table></td></tr>
 
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="a4."><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SGQuestionnaire-definitions.html#Questionnaire.text" title="A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.">text</a><a name="sa-Questionnaire.text"> </a></td>
@@ -1584,7 +1580,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">How to compare versions<br/><span style="font-weight:bold">URL: </span><a href="http://hl7.org/fhir/extensions/5.1.0/StructureDefinition-artifact-versionAlgorithm.html">http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm</a><br/><span style="font-weight:bold">Binding: </span><a href="http://hl7.org/fhir/R5/valueset-version-algorithm.html" title="http://hl7.org/fhir/ValueSet/version-algorithm">VersionAlgorithm</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.">extensible</a>)<br/></td></tr>
+<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a name="l5791">​</a>How to compare versions<br/><span style="font-weight:bold">URL: </span><a href="http://hl7.org/fhir/extensions/5.1.0/StructureDefinition-artifact-versionAlgorithm.html">http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm</a><br/><span style="font-weight:bold">Binding: </span><a href="version-algorithm.html">version-algorithm</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.">extensible</a>)<br/></td></tr>
 
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="a6.d"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck124.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Slice Item" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SGQuestionnaire-definitions.html#Questionnaire.extension:versionPolicy" title="Extension URL = http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy">versionPolicy</a><a name="sa-Questionnaire.extension.5"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td>
@@ -2121,7 +2117,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Nested questionnaire items<br/></td></tr>
 
 <tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table>
-          <!--Terminology Bindings heading in the fragment -->
+            <!-- Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
 <table class="list">
 <tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
@@ -2134,33 +2130,33 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
   </tr>
   <tr>
     <td style="font-size: 11px">
-      <a href="http://hl7.org/fhir/R5/valueset-all-languages.html" title="http://hl7.org/fhir/ValueSet/all-languages">AllLanguages</a>
+      <a href="http://hl7.org/fhir/R4/valueset-all-languages.html" title="http://hl7.org/fhir/ValueSet/all-languages">AllLanguages</a>
     </td>
     <td style="font-size: 11px">
       <a href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html" title="A required binding, for use when the binding strength is 'extensible' or 'preferred'">Max Binding</a>
     </td>
   </tr>
 </table>
-<div><code>http://hl7.org/fhir/ValueSet/languages</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/languages"></button></div><div>from the FHIR Standard</div></td></tr>
-<tr><td>Questionnaire.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="The lifecycle status of an artifact."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-publication-status.html">PublicationStatus</a><div><code>http://hl7.org/fhir/ValueSet/publication-status|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/publication-status|4.0.1"></button></div><div>from the FHIR Standard</div></td></tr>
-<tr><td>Questionnaire.subjectType</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="One of the resource types defined as part of this version of FHIR."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-resource-types.html">ResourceType</a><div><code>http://hl7.org/fhir/ValueSet/resource-types|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/resource-types|4.0.1"></button></div><div>from the FHIR Standard</div></td></tr>
-<tr><td>Questionnaire.jurisdiction</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="Countries and regions within which this artifact is targeted for use."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-jurisdiction.html">Jurisdiction ValueSet</a><div><code>http://hl7.org/fhir/ValueSet/jurisdiction</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/jurisdiction"></button></div><div>from the FHIR Standard</div></td></tr>
-<tr><td>Questionnaire.code</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes for questionnaires, groups and individual questions."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-questionnaire-questions.html">QuestionnaireQuestionCodes</a> (a valid code from <a href="https://loinc.org/">LOINC</a>)<div><code>http://hl7.org/fhir/ValueSet/questionnaire-questions</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/questionnaire-questions"></button></div><div>from the FHIR Standard</div></td></tr>
-<tr><td>Questionnaire.item.code</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes for questionnaires, groups and individual questions."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-questionnaire-questions.html">QuestionnaireQuestionCodes</a> (a valid code from <a href="https://loinc.org/">LOINC</a>)<div><code>http://hl7.org/fhir/ValueSet/questionnaire-questions</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/questionnaire-questions"></button></div><div>from the FHIR Standard</div></td></tr>
-<tr><td>Questionnaire.item.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="Distinguishes groups from questions and display text and indicates data type for questions."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-item-type.html">QuestionnaireItemType</a><div><code>http://hl7.org/fhir/ValueSet/item-type|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/item-type|4.0.1"></button></div><div>from the FHIR Standard</div></td></tr>
-<tr><td>Questionnaire.item.enableWhen.operator</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="The criteria by which a question is enabled."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-questionnaire-enable-operator.html">QuestionnaireItemOperator</a><div><code>http://hl7.org/fhir/ValueSet/questionnaire-enable-operator|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/questionnaire-enable-operator|4.0.1"></button></div><div>from the FHIR Standard</div></td></tr>
-<tr><td>Questionnaire.item.enableWhen.answer[x]</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Allowed values to answer questions."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-questionnaire-answers.html">QuestionnaireAnswerCodes</a> (a valid code from <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>)<div><code>http://hl7.org/fhir/ValueSet/questionnaire-answers</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/questionnaire-answers"></button></div><div>from the FHIR Standard</div></td></tr>
-<tr><td>Questionnaire.item.enableBehavior</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="Controls how multiple enableWhen values are interpreted -  whether all or any must be true."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-questionnaire-enable-behavior.html">EnableWhenBehavior</a><div><code>http://hl7.org/fhir/ValueSet/questionnaire-enable-behavior|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/questionnaire-enable-behavior|4.0.1"></button></div><div>from the FHIR Standard</div></td></tr>
-<tr><td>Questionnaire.item.answerOption.value[x]</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Allowed values to answer questions."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-questionnaire-answers.html">QuestionnaireAnswerCodes</a> (a valid code from <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>)<div><code>http://hl7.org/fhir/ValueSet/questionnaire-answers</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/questionnaire-answers"></button></div><div>from the FHIR Standard</div></td></tr>
-<tr><td>Questionnaire.item.initial.value[x]</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Allowed values to answer questions."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-questionnaire-answers.html">QuestionnaireAnswerCodes</a> (a valid code from <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>)<div><code>http://hl7.org/fhir/ValueSet/questionnaire-answers</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/questionnaire-answers"></button></div><div>from the FHIR Standard</div></td></tr>
+<div><code>http://hl7.org/fhir/ValueSet/languages</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/languages" title="Click to copy URL" class="btn-copy"></button></div><div>from the FHIR Standard</div></td></tr>
+<tr><td>Questionnaire.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="The lifecycle status of an artifact."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-publication-status.html">PublicationStatus</a><div><code>http://hl7.org/fhir/ValueSet/publication-status|4.0.1</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/publication-status|4.0.1" title="Click to copy URL" class="btn-copy"></button></div><div>from the FHIR Standard</div></td></tr>
+<tr><td>Questionnaire.subjectType</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="One of the resource types defined as part of this version of FHIR."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-resource-types.html">ResourceType</a><div><code>http://hl7.org/fhir/ValueSet/resource-types|4.0.1</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/resource-types|4.0.1" title="Click to copy URL" class="btn-copy"></button></div><div>from the FHIR Standard</div></td></tr>
+<tr><td>Questionnaire.jurisdiction</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="Countries and regions within which this artifact is targeted for use."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-jurisdiction.html">Jurisdiction ValueSet</a><div><code>http://hl7.org/fhir/ValueSet/jurisdiction</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/jurisdiction" title="Click to copy URL" class="btn-copy"></button></div><div>from the FHIR Standard</div></td></tr>
+<tr><td>Questionnaire.code</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes for questionnaires, groups and individual questions."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-questionnaire-questions.html">QuestionnaireQuestionCodes</a> (a valid code from <a href="https://loinc.org/">LOINC</a>)<div><code>http://hl7.org/fhir/ValueSet/questionnaire-questions</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/questionnaire-questions" title="Click to copy URL" class="btn-copy"></button></div><div>from the FHIR Standard</div></td></tr>
+<tr><td>Questionnaire.item.code</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes for questionnaires, groups and individual questions."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-questionnaire-questions.html">QuestionnaireQuestionCodes</a> (a valid code from <a href="https://loinc.org/">LOINC</a>)<div><code>http://hl7.org/fhir/ValueSet/questionnaire-questions</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/questionnaire-questions" title="Click to copy URL" class="btn-copy"></button></div><div>from the FHIR Standard</div></td></tr>
+<tr><td>Questionnaire.item.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="Distinguishes groups from questions and display text and indicates data type for questions."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-item-type.html">QuestionnaireItemType</a><div><code>http://hl7.org/fhir/ValueSet/item-type|4.0.1</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/item-type|4.0.1" title="Click to copy URL" class="btn-copy"></button></div><div>from the FHIR Standard</div></td></tr>
+<tr><td>Questionnaire.item.enableWhen.operator</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="The criteria by which a question is enabled."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-questionnaire-enable-operator.html">QuestionnaireItemOperator</a><div><code>http://hl7.org/fhir/ValueSet/questionnaire-enable-operator|4.0.1</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/questionnaire-enable-operator|4.0.1" title="Click to copy URL" class="btn-copy"></button></div><div>from the FHIR Standard</div></td></tr>
+<tr><td>Questionnaire.item.enableWhen.answer[x]</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Allowed values to answer questions."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-questionnaire-answers.html">QuestionnaireAnswerCodes</a> (a valid code from <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>)<div><code>http://hl7.org/fhir/ValueSet/questionnaire-answers</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/questionnaire-answers" title="Click to copy URL" class="btn-copy"></button></div><div>from the FHIR Standard</div></td></tr>
+<tr><td>Questionnaire.item.enableBehavior</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="Controls how multiple enableWhen values are interpreted -  whether all or any must be true."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-questionnaire-enable-behavior.html">EnableWhenBehavior</a><div><code>http://hl7.org/fhir/ValueSet/questionnaire-enable-behavior|4.0.1</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/questionnaire-enable-behavior|4.0.1" title="Click to copy URL" class="btn-copy"></button></div><div>from the FHIR Standard</div></td></tr>
+<tr><td>Questionnaire.item.answerOption.value[x]</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Allowed values to answer questions."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-questionnaire-answers.html">QuestionnaireAnswerCodes</a> (a valid code from <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>)<div><code>http://hl7.org/fhir/ValueSet/questionnaire-answers</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/questionnaire-answers" title="Click to copy URL" class="btn-copy"></button></div><div>from the FHIR Standard</div></td></tr>
+<tr><td>Questionnaire.item.initial.value[x]</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Allowed values to answer questions."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-questionnaire-answers.html">QuestionnaireAnswerCodes</a> (a valid code from <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>)<div><code>http://hl7.org/fhir/ValueSet/questionnaire-answers</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/questionnaire-answers" title="Click to copy URL" class="btn-copy"></button></div><div>from the FHIR Standard</div></td></tr>
 </table>
 
         
           
-          <!-- 218 is size of empty table -->
+            <!-- 218 is size of empty table -->
           
             <a name="inv-all-snap"> </a>
-            <!--Constraints  heading in the fragment -->
+              <!-- Constraints  heading in the fragment -->
             <h4>Constraints</h4>
 <table class="list">
 <tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
@@ -2174,13 +2170,13 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr><td>que-0</td><td>warning</td><td>Questionnaire</td><td>Name should be usable as an identifier for the module by machine processing applications such as code generation<br/>: name.matches('[A-Z]([A-Za-z0-9_]){0,254}')</td><td></td></tr>
 <tr><td>que-1</td><td>error</td><td>Questionnaire.item</td><td>Group items must have nested items, display items cannot have nested items<br/>: (type='group' implies item.empty().not()) and (type.trace('type')='display' implies item.trace('item').empty())</td><td></td></tr>
 <tr><td>que-2</td><td>error</td><td>Questionnaire</td><td>The link ids for groups and questions must be unique within the questionnaire<br/>: descendants().linkId.isDistinct()</td><td></td></tr>
-<tr><td>que-3</td><td>error</td><td>Questionnaire.item</td><td>Display items cannot have a &quot;code&quot; asserted<br/>: type!='display' or code.empty()</td><td></td></tr>
+<tr><td>que-3</td><td>error</td><td>Questionnaire.item</td><td>Display items cannot have a "code" asserted<br/>: type!='display' or code.empty()</td><td></td></tr>
 <tr><td>que-4</td><td>error</td><td>Questionnaire.item</td><td>A question cannot have both answerOption and answerValueSet<br/>: answerOption.empty() or answerValueSet.empty()</td><td></td></tr>
 <tr><td>que-5</td><td>error</td><td>Questionnaire.item</td><td>Only 'choice' and 'open-choice' items can have answerValueSet<br/>: (type ='choice' or type = 'open-choice' or type = 'decimal' or type = 'integer' or type = 'date' or type = 'dateTime' or type = 'time' or type = 'string' or type = 'quantity') or (answerValueSet.empty() and answerOption.empty())</td><td></td></tr>
 <tr><td>que-6</td><td>error</td><td>Questionnaire.item</td><td>Required and repeat aren't permitted for display items<br/>: type!='display' or (required.empty() and repeats.empty())</td><td></td></tr>
 <tr><td>que-7</td><td>error</td><td>Questionnaire.item.enableWhen</td><td>If the operator is 'exists', the value must be a boolean<br/>: operator = 'exists' implies (answer is Boolean)</td><td></td></tr>
 <tr><td>que-8</td><td>error</td><td>Questionnaire.item</td><td>Initial values can't be specified for groups or display items<br/>: (type!='group' and type!='display') or initial.empty()</td><td></td></tr>
-<tr><td>que-9</td><td>error</td><td>Questionnaire.item</td><td>Read-only can't be specified for &quot;display&quot; items<br/>: type!='display' or readOnly.empty()</td><td></td></tr>
+<tr><td>que-9</td><td>error</td><td>Questionnaire.item</td><td>Read-only can't be specified for "display" items<br/>: type!='display' or readOnly.empty()</td><td></td></tr>
 <tr><td>que-10</td><td>error</td><td>Questionnaire.item</td><td>Maximum length can only be declared for simple question types<br/>: (type in ('boolean' | 'decimal' | 'integer' | 'string' | 'text' | 'url' | 'open-choice')) or maxLength.empty()</td><td></td></tr>
 <tr><td>que-11</td><td>error</td><td>Questionnaire.item</td><td>If one or more answerOption is present, initial[x] must be missing<br/>: answerOption.empty() or initial.empty()</td><td></td></tr>
 <tr><td>que-12</td><td>error</td><td>Questionnaire.item</td><td>If there are more than one enableWhen, enableBehavior must be specified<br/>: enableWhen.count() &gt; 2 implies enableBehavior.exists()</td><td></td></tr>
@@ -2191,7 +2187,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         </div>
       </div>
 
-      <!--<div id="all-xml">
+        <!-- <div id="all-xml">
         <p>
           <b>XML Template</b>
         </p>
@@ -2199,10 +2195,10 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
           <p><span style="color: maroon; font-weight: bold">yet to be done: Xml template</span></p>
 
         </div>
-      </div>-->
+      </div> -->
 
 
-      <!--<div id="all-json">
+        <!-- <div id="all-json">
         <p>
           <b>JSON Template</b>
         </p>
@@ -2228,8 +2224,8 @@ Not handled yet: complex extension http://hl7.org/fhir/StructureDefinition/cqf-a
       { // <span style="color: navy; opacity: 0.8"> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children; ext-1: Must have either extensions or value[x], not both"><b>C?</b></span> <span style="color: brown" title="This element is an array in the base standard, but the profile only allows on element"><b>Only One!</b></span> How to compare versions</span>
         "url": "<a href="http://hl7.org/fhir/extensions/5.1.0/StructureDefinition-artifact-versionAlgorithm.html">http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm</a>",
 <span style="color: Gray">// value[x]: <span style="color: navy; opacity: 0.8">Value of extension</span>. One of these 2:</span>
-        "<a href="StructureDefinition-SGQuestionnaire.html#Questionnaire.extension.valueString" title="Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R5/extensibility.html) for a list)" class="dict"><span style="text-decoration: underline">valueString</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">Value of extension</a></span>
-        "<a href="StructureDefinition-SGQuestionnaire.html#Questionnaire.extension.valueCoding" title="Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R5/extensibility.html) for a list)" class="dict"><span style="text-decoration: underline">valueCoding</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></span>} <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">Value of extension</a></span>
+        "<a href="StructureDefinition-SGQuestionnaire.html#Questionnaire.extension.valueString" title="Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R5/extensibility.html) for a list)" class="dict"><span style="text-decoration: underline">valueString</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/ValueSet/version-algorithm.html" style="color: navy">Value of extension</a></span>
+        "<a href="StructureDefinition-SGQuestionnaire.html#Questionnaire.extension.valueCoding" title="Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R5/extensibility.html) for a list)" class="dict"><span style="text-decoration: underline">valueCoding</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></span>} <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/ValueSet/version-algorithm.html" style="color: navy">Value of extension</a></span>
       },
       { // <span style="color: navy; opacity: 0.8"> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children; ext-1: Must have either extensions or value[x], not both"><b>C?</b></span> <span style="color: brown" title="This element is an array in the base standard, but the profile only allows on element"><b>Only One!</b></span> metadata | strict</span>
         "url": "<a href="http://hl7.org/fhir/extensions/5.1.0/StructureDefinition-artifact-versionPolicy.html">http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy</a>",
@@ -2331,10 +2327,10 @@ Not handled yet: complex extension http://hl7.org/fhir/StructureDefinition/cqf-a
   }
 
         </div>
-      </div>-->
+      </div> -->
 
 
-      <!--<div id="all-ttl">
+        <!-- <div id="all-ttl">
         <p>
           <b>TTL Template</b>
         </p>
@@ -2342,7 +2338,7 @@ Not handled yet: complex extension http://hl7.org/fhir/StructureDefinition/cqf-a
           <p><span style="color: maroon; font-weight: bold">yet to be done: Turtle template</span></p>
 
         </div>
-      </div>-->
+      </div> -->
 
       <div id="all-summ">
         <p>This structure is derived from <a href="http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablequestionnaire.html">CRMIShareableQuestionnaire</a>
@@ -2357,68 +2353,67 @@ Summary
       </div>
     </div>
   </div>
-  <p>&#160;</p>
+  <p>&nbsp;</p>
   <p>Other representations of profile: <a href="StructureDefinition-SGQuestionnaire.csv">CSV</a>, <a href="StructureDefinition-SGQuestionnaire.xlsx">Excel</a>, <a href="StructureDefinition-SGQuestionnaire.sch">Schematron</a>
  
   </p>
 
   
 
-<!-- insert notes if present -->
+  <!-- insert notes if present -->
 
 
 
 
 </div>
 
-        </div>  <!-- /inner-wrapper -->
-      </div>  <!-- /row -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-content -->
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
 
-  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
 
-  <script type="text/javascript" src="assets/js/tabs.js"> </script>
+  <script src="assets/js/tabs.js" type="text/javascript"> </script>
 
-  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
   <a name="bottom"> </a>
-  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
-    <div class="container">  <!-- container -->
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.base#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Sep 20, 2024 13:45+0000">2024-09-20</span>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.base#0.1.0a based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 20, 2024 07:42+0000">2024-11-20</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
-| <a style="color: #81BEF7" target="_blank" href="http://smart.who.int/base/history.html">Version History</a> | <a style="color: #81BEF7" rel="license" href="license.html">License</a>
+| <a style="color: #81BEF7" href="http://smart.who.int/base/history.html" target="_blank">Version History</a> | <a rel="license" style="color: #81BEF7" href="license.html">License</a>
           </span>
         </p>
-      </div>  <!-- /inner-wrapper -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-footer -->
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
   
-  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
-    <div class="container">  <!-- container -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-post-footer -->
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
 
-  <!-- JS and analytics only. -->
-  <!-- Bootstrap core JavaScript
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
   ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
-  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
-  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
-  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
-  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
-  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
-  <!-- Analytics Below
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+    <!-- Analytics Below
   ================================================== -->
   </body>
 </html>
-

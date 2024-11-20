@@ -9,12 +9,12 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide smart.who.int.base</b></p><a name=\"smart.who.int.base\"> </a><a name=\"hcsmart.who.int.base\"> </a><a name=\"smart.who.int.base-en-US\"> </a><h2>Base</h2><p>The official URL for this implementation guide is: </p><pre>http://smart.who.int/base/ImplementationGuide/smart.who.int.base</pre><div><p>Base SMART Guidelines implementation guide to be used as the base dependency for all SMART Guidelines IGs</p>\n</div></div>"
   },
   "url" : "http://smart.who.int/base/ImplementationGuide/smart.who.int.base",
-  "version" : "0.1.0",
+  "version" : "0.1.0a",
   "name" : "Base",
   "title" : "SMART Base",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2024-09-20T13:45:31+00:00",
+  "date" : "2024-11-20T07:42:16+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",
@@ -347,7 +347,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools#0.2.0"
+      "valueCode" : "hl7.fhir.uv.tools.r4#0.3.0"
     },
     {
       "extension" : [{

@@ -1,0 +1,6 @@
+{
+  "version" : "0.1.0a",
+  "fhirVersion" : ["4.0.1"],
+  "date" : "20241120073936",
+  "name" : "smart.who.int.base"
+}

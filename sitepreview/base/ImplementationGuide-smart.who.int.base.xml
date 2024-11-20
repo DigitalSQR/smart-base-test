@@ -10,12 +10,12 @@
 </div></div>
   </text>
   <url value="http://smart.who.int/base/ImplementationGuide/smart.who.int.base"/>
-  <version value="0.1.0"/>
+  <version value="0.1.0a"/>
   <name value="Base"/>
   <title value="SMART Base"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2024-09-20T13:45:31+00:00"/>
+  <date value="2024-11-20T07:42:16+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -264,7 +264,7 @@
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools#0.2.0"/>
+      <valueCode value="hl7.fhir.uv.tools.r4#0.3.0"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">

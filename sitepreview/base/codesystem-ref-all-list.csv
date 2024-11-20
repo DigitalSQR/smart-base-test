@@ -1,4 +1,4 @@
-URL,Version,Status,OIDs,Name,Title,Descriptino,Used
+URL,Version,Status,OIDs,Name,Title,Description,Used
 http://hl7.org/fhir/FHIR-version,4.0.1,active,"2.16.840.1.113883.4.642.4.1310",FHIRVersion,FHIRVersion,"All published FHIR Versions.","ValueSet/FHIR-version"
 http://hl7.org/fhir/action-cardinality-behavior,4.0.1,draft,"2.16.840.1.113883.4.642.4.808",ActionCardinalityBehavior,ActionCardinalityBehavior,"Defines behavior for an action or a group for how many times that item may be repeated.","ValueSet/action-cardinality-behavior"
 http://hl7.org/fhir/action-condition-kind,4.0.1,draft,"2.16.840.1.113883.4.642.4.816",ActionConditionKind,ActionConditionKind,"Defines the kinds of conditions that can appear on actions.","ValueSet/action-condition-kind"

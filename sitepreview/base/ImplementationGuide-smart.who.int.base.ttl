@@ -19,12 +19,12 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide smart.who.int.base</b></p><a name=\"smart.who.int.base\"> </a><a name=\"hcsmart.who.int.base\"> </a><a name=\"smart.who.int.base-en-US\"> </a><h2>Base</h2><p>The official URL for this implementation guide is: </p><pre>http://smart.who.int/base/ImplementationGuide/smart.who.int.base</pre><div><p>Base SMART Guidelines implementation guide to be used as the base dependency for all SMART Guidelines IGs</p>\n</div></div>"
   ] ; # 
   fhir:url [ fhir:v "http://smart.who.int/base/ImplementationGuide/smart.who.int.base"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:version [ fhir:v "0.1.0a"] ; # 
   fhir:name [ fhir:v "Base"] ; # 
   fhir:title [ fhir:v "SMART Base"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2024-09-20T13:45:31+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-11-20T07:42:16+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "WHO"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "WHO" ] ;
@@ -318,7 +318,7 @@
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "hl7.fhir.uv.tools#0.2.0" ]
+       fhir:value [ fhir:v "hl7.fhir.uv.tools.r4#0.3.0" ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
