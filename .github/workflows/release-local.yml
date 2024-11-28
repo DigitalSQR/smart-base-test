@@ -92,11 +92,11 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          ls ./release-assets
-          for file in ./release-assets/*.zip; do
+          find ./release-assets -name "*.zip" -print0 | while IFS= read -r -d '' file; do
             echo "Uploading $file to release"
             gh release upload "v0.1.0a" -- "$file" --clobber
           done
+
 #            gh release upload ${{ github.event.release.tag_name }} "$file" --clobber
 
       - name: Upload package.tgz to release
