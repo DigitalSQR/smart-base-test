@@ -18,26 +18,27 @@ jobs:
       - name: Checkout current repo to ./source
         uses: actions/checkout@v3
         with:
-          path: ./source
+          path: source
           fetch-depth: 0  # Fetch all history for all branches and tags.
 
       - name: Checkout HL7/fhir-ig-history-template to ./history-template
         uses: actions/checkout@v3
         with:
           repository: HL7/fhir-ig-history-template
-          path: ./history-template
+          path: history-template
 
       - name: Checkout WorldHealthOrganization/smart-html to ./webroot
         uses: actions/checkout@v3
         with:
           repository: WorldHealthOrganization/smart-html
-          path: ./webroot
+          path: webroot
+          fetch-depth: 0  # Fetch all history for all branches and tags.
 
       - name: Checkout FHIR/ig-registry to ./ig-registry
         uses: actions/checkout@v3
         with:
           repository: FHIR/ig-registry
-          path: ./ig-registry
+          path: ig-registry
 
       - name: Setup publisher and install dependencies
         run: |
@@ -48,25 +49,19 @@ jobs:
 
       - name: Create package cache folder
         run: |
-          mkdir -p ./fhir-package-cache
+          docker run --rm -v $(pwd):/workspace -w /workspace hl7fhir/ig-publisher-base:latest /bin/sh -c "
+            mkdir -p ./fhir-package-cache && chown 1001:127 ./fhir-package-cache
+          "
 
       - name: Run the IG publisher
         run: |
-          docker run --rm -v $(pwd):/workspace -w /workspace hl7fhir/ig-publisher-base:latest java -Xmx4g -jar ./publisher.jar publisher -ig ./source -package-cache-folder ./fhir-package-cache
+          find . -type d
+          docker run --rm -v $(pwd):/workspace -w /workspace hl7fhir/ig-publisher-base:latest java -Xmx4g -jar ./publisher.jar -ig source -package-cache-folder fhir-package-cache
 
       - name: Run publisher command for publishing release
-        env:
-          WORKSPACE: ${{ github.workspace }}
         run: |
-          docker run --rm -v $(pwd):/workspace -w /workspace hl7fhir/ig-publisher-base:latest java -Xmx4g -Dfile.encoding=UTF-8 -jar ./publisher.jar -go-publish \
-            -package-cache-folder $WORKSPACE/fhir-package-cache \
-            -ig $WORKSPACE/source \
-            -source $WORKSPACE/source \
-            -web $WORKSPACE/webroot \
-            -temp $WORKSPACE/temp \
-            -registry $WORKSPACE/ig-registry/fhir-ig-list.json \
-            -history $WORKSPACE/history-template \
-            -templates $WORKSPACE/webroot/templates
+          docker run --rm -v $(pwd):/workspace -w /workspace hl7fhir/ig-publisher-base:latest java -Xmx4g -jar ./publisher.jar -go-publish -package-cache-folder fhir-package-cache -ig . -source source -web $(pwd)/webroot -temp $(pwd)/temp -registry $(pwd)/ig-registry/fhir-ig-list.json -history $(pwd)/history-template -templates $(pwd)/webroot/templates
+      
 
       - name: Prepare deployment folder (excluding full-ig.zip)
         run: |
