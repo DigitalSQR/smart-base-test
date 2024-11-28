@@ -19,7 +19,6 @@ jobs:
         uses: actions/checkout@v3
         with:
           path: source
-        with:
           fetch-depth: 0  # Fetch all history for all branches and tags.
 
       - name: Checkout HL7/fhir-ig-history-template to ./history-template
