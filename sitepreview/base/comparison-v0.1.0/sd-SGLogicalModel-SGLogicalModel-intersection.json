@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "04ff4489-cf7f-48a3-b882-a7a6c845780d-30",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/04ff4489-cf7f-48a3-b882-a7a6c845780d-30",
+  "id" : "ea579f36-5a89-4346-aed6-2f13ba5fe678-30",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/ea579f36-5a89-4346-aed6-2f13ba5fe678-30",
   "name" : "IntersectionSGLogicalModelAndSGLogicalModel",
   "title" : "Intersection of SMART Guidelines Logical Model And SMART Guidelines Logical Model",
   "status" : "draft",
-  "date" : "2024-11-28T19:12:16+00:00",
+  "date" : "2024-11-28T19:26:20+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "StructureDefinition",
