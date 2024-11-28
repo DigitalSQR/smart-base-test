@@ -18,8 +18,8 @@
       <dc:creator>WHO</dc:creator>
       <fhir:version>4.0.1</fhir:version>
       <fhir:kind>IG</fhir:kind>
-      <pubDate>Thu, 28 Nov 2024 08:22:45 +0000</pubDate>
-      <fhir:details>Publication run at 28/11/2024 by c416baf4582a using vVersion 1.7.5 (Git# 2ec44e6c46a5). Built 2024-11-22T15:37:50.312Z (6 days old) source id Unknown (todo) Run #2</fhir:details>
+      <pubDate>Thu, 28 Nov 2024 08:39:48 +0000</pubDate>
+      <fhir:details>Publication run at 28/11/2024 by 876593f084d5 using vVersion 1.7.5 (Git# 2ec44e6c46a5). Built 2024-11-22T15:37:50.312Z (6 days old) source id Unknown (todo) Run #2</fhir:details>
     </item>
     <item>
       <title>SMART DAK IMMZ version 0.9.9</title>

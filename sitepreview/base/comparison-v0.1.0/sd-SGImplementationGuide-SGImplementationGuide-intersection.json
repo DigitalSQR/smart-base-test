@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "cc5ef178-dc63-4d08-8e1d-14ae163f44b6-24",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/cc5ef178-dc63-4d08-8e1d-14ae163f44b6-24",
+  "id" : "c70c8464-74d0-4d7e-bb34-08aa80ed2dd1-24",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/c70c8464-74d0-4d7e-bb34-08aa80ed2dd1-24",
   "name" : "IntersectionSGImplementationGuideAndSGImplementationGuide",
   "title" : "Intersection of SMART Guidelines ImplementationGuide And SMART Guidelines ImplementationGuide",
   "status" : "draft",
-  "date" : "2024-11-28T20:25:44+00:00",
+  "date" : "2024-11-28T20:42:48+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "ImplementationGuide",
