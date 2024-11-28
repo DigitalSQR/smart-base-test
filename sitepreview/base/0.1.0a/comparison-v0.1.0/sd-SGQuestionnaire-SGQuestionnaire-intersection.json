@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "7185950c-ce9c-4245-8f63-65e26afffbdd-39",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/7185950c-ce9c-4245-8f63-65e26afffbdd-39",
+  "id" : "74adab6f-703a-47fd-858c-0e7a5a54c9ab-39",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/74adab6f-703a-47fd-858c-0e7a5a54c9ab-39",
   "name" : "IntersectionSGQuestionnaireAndSGQuestionnaire",
   "title" : "Intersection of SMART Guidelines Questionnaire And SMART Guidelines Questionnaire",
   "status" : "draft",
-  "date" : "2024-11-28T18:01:09+00:00",
+  "date" : "2024-11-28T18:12:56+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "Questionnaire",

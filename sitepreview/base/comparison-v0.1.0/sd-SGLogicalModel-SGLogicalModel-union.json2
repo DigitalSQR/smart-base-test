@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "01e8ea47-0d9e-444c-942a-615edc2fd7d7-29",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/01e8ea47-0d9e-444c-942a-615edc2fd7d7-29",
+  "id" : "88b20fc0-316b-457f-aa2b-80d539ca926e-29",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/88b20fc0-316b-457f-aa2b-80d539ca926e-29",
   "name" : "UnionSGLogicalModelAndSGLogicalModel",
   "title" : "Union of SMART Guidelines Logical Model And SMART Guidelines Logical Model",
   "status" : "draft",
-  "date" : "2024-11-28T18:02:37+00:00",
+  "date" : "2024-11-28T18:14:22+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "StructureDefinition",
