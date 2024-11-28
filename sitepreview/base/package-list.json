@@ -12,7 +12,7 @@
       "status" : "draft",
       "sequence" : "Releases",
       "fhirversion" : "4.0.1",
-      "date" : "2024-11-20",
+      "date" : "2024-11-28",
       "current" : true,
       "desc" : "0.1.0 draft release"
     },

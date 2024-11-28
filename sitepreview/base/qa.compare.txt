@@ -1,7 +1,7 @@
 Base : Validation Results
 =========================================
 
-err = 1, warn = 3, info = 15
+err = 1, warn = 1, info = 17
 $--
 Generated $--. FHIR version $-- for smart.who.int.base#$-- (canonical = http://smart.who.int/base)
  Build Errors : 42 / 0 / 0
@@ -13,7 +13,7 @@ Generated $--. FHIR version $-- for smart.who.int.base#$-- (canonical = http://s
  /workspace/temp/smart.who.int.base#0.1.0a-milestone/fsh-generated/resources/StructureDefinition-SGConceptMap : 0 / 1 / 1
  /workspace/temp/smart.who.int.base#0.1.0a-milestone/fsh-generated/resources/StructureDefinition-SGImplementationGuide : 0 / 0 / 2
  /workspace/temp/smart.who.int.base#0.1.0a-milestone/fsh-generated/resources/StructureDefinition-SGLibrary : 0 / 1 / 1
- /workspace/temp/smart.who.int.base#0.1.0a-milestone/fsh-generated/resources/StructureDefinition-SGLogicalModel : 0 / 2 / 2
+ /workspace/temp/smart.who.int.base#0.1.0a-milestone/fsh-generated/resources/StructureDefinition-SGLogicalModel : 0 / 0 / 4
  /workspace/temp/smart.who.int.base#0.1.0a-milestone/fsh-generated/resources/StructureDefinition-SGMeasure : 0 / 1 / 1
  /workspace/temp/smart.who.int.base#0.1.0a-milestone/fsh-generated/resources/StructureDefinition-SGPlanDefinition : 0 / 1 / 1
  /workspace/temp/smart.who.int.base#0.1.0a-milestone/fsh-generated/resources/StructureDefinition-SGQuestionnaire : 0 / 1 / 1
@@ -91,8 +91,8 @@ INFORMATION: ImplementationGuide/smart.who.int.base: ImplementationGuide.definit
 == fsh-generated/resources/StructureDefinition-SGImplementationGuide.json ==
 == fsh-generated/resources/StructureDefinition-SGLibrary.json ==
 == fsh-generated/resources/StructureDefinition-SGLogicalModel.json ==
-WARNING: StructureDefinition/SGLogicalModel: StructureDefinition.differential.element[4].slicing.discriminator[0]: The discriminator type 'pattern' has been deprecated. Use type=value with a pattern[x] instead
-WARNING: StructureDefinition/SGLogicalModel: StructureDefinition.snapshot.element[64].slicing.discriminator[0]: The discriminator type 'pattern' has been deprecated. Use type=value with a pattern[x] instead
+INFORMATION: StructureDefinition/SGLogicalModel: StructureDefinition.differential.element[4].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/SGLogicalModel: StructureDefinition.snapshot.element[64].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 == fsh-generated/resources/StructureDefinition-SGMeasure.json ==
 == fsh-generated/resources/StructureDefinition-SGPlanDefinition.json ==
 == fsh-generated/resources/StructureDefinition-SGQuestionnaire.json ==

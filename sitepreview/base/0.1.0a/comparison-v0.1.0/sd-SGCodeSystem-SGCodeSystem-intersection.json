@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "5f868a53-449c-4549-b45d-4a7fce6e4f49-15",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/5f868a53-449c-4549-b45d-4a7fce6e4f49-15",
+  "id" : "64faaf2b-75dc-45b5-8da2-302817cc911b-15",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/64faaf2b-75dc-45b5-8da2-302817cc911b-15",
   "name" : "IntersectionSGCodeSystemAndSGCodeSystem",
   "title" : "Intersection of SMART Guidelines CodeSystem And SMART Guidelines CodeSystem",
   "status" : "draft",
-  "date" : "2024-11-20T08:06:11+00:00",
+  "date" : "2024-11-28T16:15:17+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "CodeSystem",

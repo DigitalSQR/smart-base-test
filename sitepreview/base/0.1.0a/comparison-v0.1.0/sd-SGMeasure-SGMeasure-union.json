@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "5f868a53-449c-4549-b45d-4a7fce6e4f49-32",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/5f868a53-449c-4549-b45d-4a7fce6e4f49-32",
+  "id" : "64faaf2b-75dc-45b5-8da2-302817cc911b-32",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/64faaf2b-75dc-45b5-8da2-302817cc911b-32",
   "name" : "UnionSGMeasureAndSGMeasure",
   "title" : "Union of SMART Guidelines Measure And SMART Guidelines Measure",
   "status" : "draft",
-  "date" : "2024-11-20T08:06:11+00:00",
+  "date" : "2024-11-28T16:15:17+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "Measure",

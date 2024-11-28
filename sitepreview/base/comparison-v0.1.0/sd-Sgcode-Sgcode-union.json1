@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "9194ebe8-21fa-4444-a341-ef1fbe8c6a15-50",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/9194ebe8-21fa-4444-a341-ef1fbe8c6a15-50",
+  "id" : "8365dc49-f25d-4d45-874a-0dc3b38d2732-50",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/8365dc49-f25d-4d45-874a-0dc3b38d2732-50",
   "name" : "UnionSgcodeAndSgcode",
   "title" : "Union of null And null",
   "status" : "draft",
-  "date" : "2024-11-20T08:07:33+00:00",
+  "date" : "2024-11-28T16:16:48+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "Extension",

@@ -10,12 +10,12 @@
       "version-count" : 2,
       "latest" : {
         "version" : "0.1.0a",
-        "date" : "2024-11-20",
+        "date" : "2024-11-28",
         "path" : "http://smart.who.int/base/0.1.0a"
       },
       "milestone" : {
         "version" : "0.1.0a",
-        "date" : "2024-11-20",
+        "date" : "2024-11-28",
         "path" : "http://smart.who.int/base/0.1.0a"
       }
     },
