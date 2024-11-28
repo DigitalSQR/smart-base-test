@@ -60,6 +60,7 @@ jobs:
 
       - name: Run publisher command for publishing release
         run: |
+          find . -type d
           docker run --rm -v $(pwd):/workspace -w /workspace hl7fhir/ig-publisher-base:latest java -Xmx4g -jar ./publisher.jar -go-publish -package-cache-folder fhir-package-cache -ig . -source source -web $(pwd)/webroot -temp $(pwd)/temp -registry $(pwd)/ig-registry/fhir-ig-list.json -history $(pwd)/history-template -templates $(pwd)/webroot/templates
       
 
