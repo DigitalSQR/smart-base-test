@@ -95,7 +95,7 @@ jobs:
           ls ./release-assets
           for file in ./release-assets/*.zip; do
             echo "Uploading $file to release"
-            gh release upload "v0.1.0a" "$file" --clobber
+            gh release upload "v0.1.0a" -- "$file" --clobber
           done
 #            gh release upload ${{ github.event.release.tag_name }} "$file" --clobber
 
