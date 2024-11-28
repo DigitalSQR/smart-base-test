@@ -89,6 +89,8 @@ jobs:
           mv ./source/output/package.tgz ./release-assets/
 
       - name: Upload .zip files to release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           for file in ./release-assets/*.zip; do
             echo "Uploading $file to release"
