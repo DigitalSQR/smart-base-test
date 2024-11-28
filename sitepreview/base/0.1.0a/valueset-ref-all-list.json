@@ -78,9 +78,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.796"],
       "uses" : {
       },
-      "StructureDefinition-SGActivityDefinition.html" : "SMART Guidelines ActivityDefinition",
       "StructureDefinition-SGBusinessProcess.html" : "SMART Guidelines Business Process",
-      "StructureDefinition-SGPlanDefinition.html" : "SMART Guidelines PlanDefinition"
+      "StructureDefinition-SGPlanDefinition.html" : "SMART Guidelines PlanDefinition",
+      "StructureDefinition-SGActivityDefinition.html" : "SMART Guidelines ActivityDefinition"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/action-participant-type",
@@ -94,9 +94,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.811"],
       "uses" : {
       },
-      "StructureDefinition-SGActivityDefinition.html" : "SMART Guidelines ActivityDefinition",
       "StructureDefinition-SGBusinessProcess.html" : "SMART Guidelines Business Process",
-      "StructureDefinition-SGPlanDefinition.html" : "SMART Guidelines PlanDefinition"
+      "StructureDefinition-SGPlanDefinition.html" : "SMART Guidelines PlanDefinition",
+      "StructureDefinition-SGActivityDefinition.html" : "SMART Guidelines ActivityDefinition"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/action-precheck-behavior",
@@ -361,11 +361,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.794"],
       "uses" : {
       },
-      "StructureDefinition-SGActivityDefinition.html" : "SMART Guidelines ActivityDefinition",
-      "StructureDefinition-SGLibrary.html" : "SMART Guidelines Library",
       "StructureDefinition-SGBusinessProcess.html" : "SMART Guidelines Business Process",
       "StructureDefinition-SGMeasure.html" : "SMART Guidelines Measure",
-      "StructureDefinition-SGPlanDefinition.html" : "SMART Guidelines PlanDefinition"
+      "StructureDefinition-SGPlanDefinition.html" : "SMART Guidelines PlanDefinition",
+      "StructureDefinition-SGLibrary.html" : "SMART Guidelines Library",
+      "StructureDefinition-SGActivityDefinition.html" : "SMART Guidelines ActivityDefinition"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/definition-use",
@@ -586,19 +586,19 @@
       "sources" : ["2.16.840.1.113883.4.642.3.48"],
       "uses" : {
       },
-      "StructureDefinition-SGCodeSystem.html" : "SMART Guidelines CodeSystem",
+      "StructureDefinition-SGLogicalModel.html" : "SMART Guidelines Logical Model",
       "StructureDefinition-SGQuestionnaire.html" : "SMART Guidelines Questionnaire",
       "StructureDefinition-SGLibrary.html" : "SMART Guidelines Library",
-      "StructureDefinition-SGStructureDefinition.html" : "SMART Guidelines StructureDefinition",
-      "StructureDefinition-SGBusinessProcess.html" : "SMART Guidelines Business Process",
-      "StructureDefinition-SGMeasure.html" : "SMART Guidelines Measure",
-      "StructureDefinition-SGStructureMap.html" : "SMART Guidelines StructureMap",
-      "StructureDefinition-SGActivityDefinition.html" : "SMART Guidelines ActivityDefinition",
-      "StructureDefinition-SGLogicalModel.html" : "SMART Guidelines Logical Model",
-      "StructureDefinition-SGValueSet.html" : "SMART Guidelines ValueSet",
       "StructureDefinition-SGConceptMap.html" : "SMART Guidelines ConceptMap",
+      "StructureDefinition-SGActivityDefinition.html" : "SMART Guidelines ActivityDefinition",
+      "StructureDefinition-SGStructureMap.html" : "SMART Guidelines StructureMap",
+      "StructureDefinition-SGCodeSystem.html" : "SMART Guidelines CodeSystem",
       "StructureDefinition-SGImplementationGuide.html" : "SMART Guidelines ImplementationGuide",
-      "StructureDefinition-SGPlanDefinition.html" : "SMART Guidelines PlanDefinition"
+      "StructureDefinition-SGBusinessProcess.html" : "SMART Guidelines Business Process",
+      "StructureDefinition-SGStructureDefinition.html" : "SMART Guidelines StructureDefinition",
+      "StructureDefinition-SGMeasure.html" : "SMART Guidelines Measure",
+      "StructureDefinition-SGPlanDefinition.html" : "SMART Guidelines PlanDefinition",
+      "StructureDefinition-SGValueSet.html" : "SMART Guidelines ValueSet"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -612,20 +612,20 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-SGCodeSystem.html" : "SMART Guidelines CodeSystem",
-      "StructureDefinition-SGQuestionnaire.html" : "SMART Guidelines Questionnaire",
-      "StructureDefinition-SGLibrary.html" : "SMART Guidelines Library",
-      "StructureDefinition-SGStructureDefinition.html" : "SMART Guidelines StructureDefinition",
-      "StructureDefinition-SGBusinessProcess.html" : "SMART Guidelines Business Process",
-      "StructureDefinition-SGMeasure.html" : "SMART Guidelines Measure",
-      "StructureDefinition-SGStructureMap.html" : "SMART Guidelines StructureMap",
-      "StructureDefinition-SGGroupDefinition.html" : "WHO SMART Guidelines Group Definition",
-      "StructureDefinition-SGActivityDefinition.html" : "SMART Guidelines ActivityDefinition",
       "StructureDefinition-SGLogicalModel.html" : "SMART Guidelines Logical Model",
-      "StructureDefinition-SGValueSet.html" : "SMART Guidelines ValueSet",
+      "StructureDefinition-SGQuestionnaire.html" : "SMART Guidelines Questionnaire",
+      "StructureDefinition-SGGroupDefinition.html" : "WHO SMART Guidelines Group Definition",
+      "StructureDefinition-SGLibrary.html" : "SMART Guidelines Library",
       "StructureDefinition-SGConceptMap.html" : "SMART Guidelines ConceptMap",
+      "StructureDefinition-SGActivityDefinition.html" : "SMART Guidelines ActivityDefinition",
+      "StructureDefinition-SGStructureMap.html" : "SMART Guidelines StructureMap",
+      "StructureDefinition-SGCodeSystem.html" : "SMART Guidelines CodeSystem",
       "StructureDefinition-SGImplementationGuide.html" : "SMART Guidelines ImplementationGuide",
-      "StructureDefinition-SGPlanDefinition.html" : "SMART Guidelines PlanDefinition"
+      "StructureDefinition-SGBusinessProcess.html" : "SMART Guidelines Business Process",
+      "StructureDefinition-SGStructureDefinition.html" : "SMART Guidelines StructureDefinition",
+      "StructureDefinition-SGMeasure.html" : "SMART Guidelines Measure",
+      "StructureDefinition-SGPlanDefinition.html" : "SMART Guidelines PlanDefinition",
+      "StructureDefinition-SGValueSet.html" : "SMART Guidelines ValueSet"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/library-type",
@@ -910,19 +910,19 @@
       "sources" : ["2.16.840.1.113883.4.642.3.3"],
       "uses" : {
       },
-      "StructureDefinition-SGCodeSystem.html" : "SMART Guidelines CodeSystem",
+      "StructureDefinition-SGLogicalModel.html" : "SMART Guidelines Logical Model",
       "StructureDefinition-SGQuestionnaire.html" : "SMART Guidelines Questionnaire",
       "StructureDefinition-SGLibrary.html" : "SMART Guidelines Library",
-      "StructureDefinition-SGStructureDefinition.html" : "SMART Guidelines StructureDefinition",
-      "StructureDefinition-SGBusinessProcess.html" : "SMART Guidelines Business Process",
-      "StructureDefinition-SGMeasure.html" : "SMART Guidelines Measure",
-      "StructureDefinition-SGStructureMap.html" : "SMART Guidelines StructureMap",
-      "StructureDefinition-SGActivityDefinition.html" : "SMART Guidelines ActivityDefinition",
-      "StructureDefinition-SGLogicalModel.html" : "SMART Guidelines Logical Model",
-      "StructureDefinition-SGValueSet.html" : "SMART Guidelines ValueSet",
       "StructureDefinition-SGConceptMap.html" : "SMART Guidelines ConceptMap",
+      "StructureDefinition-SGActivityDefinition.html" : "SMART Guidelines ActivityDefinition",
+      "StructureDefinition-SGStructureMap.html" : "SMART Guidelines StructureMap",
+      "StructureDefinition-SGCodeSystem.html" : "SMART Guidelines CodeSystem",
       "StructureDefinition-SGImplementationGuide.html" : "SMART Guidelines ImplementationGuide",
-      "StructureDefinition-SGPlanDefinition.html" : "SMART Guidelines PlanDefinition"
+      "StructureDefinition-SGBusinessProcess.html" : "SMART Guidelines Business Process",
+      "StructureDefinition-SGStructureDefinition.html" : "SMART Guidelines StructureDefinition",
+      "StructureDefinition-SGMeasure.html" : "SMART Guidelines Measure",
+      "StructureDefinition-SGPlanDefinition.html" : "SMART Guidelines PlanDefinition",
+      "StructureDefinition-SGValueSet.html" : "SMART Guidelines ValueSet"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/questionnaire-answers",
@@ -1020,9 +1020,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.115"],
       "uses" : {
       },
-      "StructureDefinition-SGActivityDefinition.html" : "SMART Guidelines ActivityDefinition",
       "StructureDefinition-SGBusinessProcess.html" : "SMART Guidelines Business Process",
-      "StructureDefinition-SGPlanDefinition.html" : "SMART Guidelines PlanDefinition"
+      "StructureDefinition-SGPlanDefinition.html" : "SMART Guidelines PlanDefinition",
+      "StructureDefinition-SGActivityDefinition.html" : "SMART Guidelines ActivityDefinition"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/request-resource-types",
@@ -1078,10 +1078,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.27"],
       "uses" : {
       },
-      "StructureDefinition-SGQuestionnaire.html" : "SMART Guidelines Questionnaire",
-      "StructureDefinition-SGActivityDefinition.html" : "SMART Guidelines ActivityDefinition",
       "StructureDefinition-SGImplementationGuide.html" : "SMART Guidelines ImplementationGuide",
-      "StructureDefinition-SGGroupDefinition.html" : "WHO SMART Guidelines Group Definition"
+      "StructureDefinition-SGQuestionnaire.html" : "SMART Guidelines Questionnaire",
+      "StructureDefinition-SGGroupDefinition.html" : "WHO SMART Guidelines Group Definition",
+      "StructureDefinition-SGActivityDefinition.html" : "SMART Guidelines ActivityDefinition"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/spdx-license",
@@ -1124,11 +1124,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.775"],
       "uses" : {
       },
-      "StructureDefinition-SGActivityDefinition.html" : "SMART Guidelines ActivityDefinition",
-      "StructureDefinition-SGLibrary.html" : "SMART Guidelines Library",
       "StructureDefinition-SGBusinessProcess.html" : "SMART Guidelines Business Process",
       "StructureDefinition-SGMeasure.html" : "SMART Guidelines Measure",
-      "StructureDefinition-SGPlanDefinition.html" : "SMART Guidelines PlanDefinition"
+      "StructureDefinition-SGPlanDefinition.html" : "SMART Guidelines PlanDefinition",
+      "StructureDefinition-SGLibrary.html" : "SMART Guidelines Library",
+      "StructureDefinition-SGActivityDefinition.html" : "SMART Guidelines ActivityDefinition"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/type-derivation-rule",

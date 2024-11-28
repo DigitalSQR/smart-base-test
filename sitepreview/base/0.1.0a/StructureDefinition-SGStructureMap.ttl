@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "SGStructureMap"] ; # 
   fhir:title [ fhir:v "SMART Guidelines StructureMap"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-11-28T16:14:44+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-11-28T16:30:08+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "WHO"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "WHO" ] ;
