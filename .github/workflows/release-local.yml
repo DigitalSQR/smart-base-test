@@ -93,9 +93,11 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           find ./release-assets -name "*.zip" -print0 | while IFS= read -r -d '' file; do
-            echo "Uploading $file to release"
-            gh release upload "v0.1.0a" -- "$file" --clobber
+            escaped_file=$(echo "$file" | sed 's/#/\\#/g')
+            echo "Uploading $escaped_file to release"
+            gh release upload "v0.1.0a" -- "$escaped_file" --clobber
           done
+
 
 #            gh release upload ${{ github.event.release.tag_name }} "$file" --clobber
 
