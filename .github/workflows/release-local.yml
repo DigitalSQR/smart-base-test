@@ -1,4 +1,4 @@
-name: ReleaseBuild
+name: ReleaseBuild-Local
 
 on:
   workflow_call:  # Reusable by other workflows
