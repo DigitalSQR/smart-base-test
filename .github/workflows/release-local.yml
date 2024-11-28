@@ -67,11 +67,14 @@ jobs:
           "
 #          docker run --rm -v $(pwd):/workspace -w /workspace hl7fhir/ig-publisher-base:latest java -Xmx4g -jar ./publisher.jar -go-publish -package-cache-folder $(pwd)/fhir-package-cache -ig . -source source -web $(pwd)/webroot -temp $(pwd)/temp -registry $(pwd)/ig-registry/fhir-ig-list.json -history $(pwd)/history-template -templates $(pwd)/webroot/templates
 
-
-      - name: Prepare deployment folder (excluding full-ig.zip)
+      - name: Exclude .zip files from gh-pages and move to release-assets
         run: |
-          mkdir -p ./deploy &&
-          rsync -av --exclude="full-ig.zip" ./webroot/ ./deploy/
+          mkdir -p ./release-assets
+          # Move all .zip files to release-assets
+          find ./webroot/ig-build-zips -name "*.zip" -exec mv {} ./release-assets/ \;
+          # Prepare the deploy folder excluding .zip files
+          mkdir -p ./deploy
+          rsync -av --exclude="*.zip" ./webroot/ ./deploy/
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
@@ -86,13 +89,12 @@ jobs:
           mv ./webroot/full-ig.zip ./release-assets/
           mv ./source/output/package.tgz ./release-assets/
 
-      - name: Upload full-ig.zip to release
-        uses: actions/upload-release-asset@v1
-        with:
-          upload_url: ${{ github.event.release.upload_url }}
-          asset_path: ./release-assets/full-ig.zip
-          asset_name: full-ig.zip
-          asset_content_type: application/zip
+      - name: Upload .zip files to release
+        run: |
+          for file in ./release-assets/*.zip; do
+            echo "Uploading $file to release"
+            gh release upload ${{ github.event.release.tag_name }} "$file" --clobber
+          done
 
       - name: Upload package.tgz to release
         uses: actions/upload-release-asset@v1
