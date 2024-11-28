@@ -4,9 +4,9 @@
     <description>Packages published by the World Health Organization SMART Guidelines</description>
     <link>https://smart.who.int/package-feed.xml</link>
     <generator>HL7, Inc FHIR Publication tooling</generator>
-    <lastBuildDate>Thu, 28 Nov 2024 07:41:32 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 Nov 2024 07:54:17 +0000</lastBuildDate>
     <atom:link href="https://smart.who.int/package-feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 28 Nov 2024 07:41:32 +0000</pubDate>
+    <pubDate>Thu, 28 Nov 2024 07:54:17 +0000</pubDate>
     <language>en</language>
     <ttl>600</ttl>
     <item>
@@ -17,8 +17,8 @@
       <dc:creator>WHO</dc:creator>
       <fhir:version>4.0.1</fhir:version>
       <fhir:kind>IG</fhir:kind>
-      <pubDate>Thu, 28 Nov 2024 07:41:32 +0000</pubDate>
-      <fhir:details>Publication run at 28/11/2024 by 34115e79da73 using vVersion 1.7.5 (Git# 2ec44e6c46a5). Built 2024-11-22T15:37:50.312Z (6 days old) source id Unknown (todo) Run #2</fhir:details>
+      <pubDate>Thu, 28 Nov 2024 07:54:17 +0000</pubDate>
+      <fhir:details>Publication run at 28/11/2024 by 4576d7b05170 using vVersion 1.7.5 (Git# 2ec44e6c46a5). Built 2024-11-22T15:37:50.312Z (6 days old) source id Unknown (todo) Run #2</fhir:details>
     </item>
     <item>
       <title>smart.who.int.dak-immz#0.9.9</title>
