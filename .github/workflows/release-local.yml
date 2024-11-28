@@ -91,21 +91,10 @@ jobs:
           publish_dir: ./deploy
           destination_dir: sitepreview
 
-      - name: Upload release assets (full-ig.zip and package.tgz)
+      - name: Upload release assets ( package.tgz)
         run: |
           mkdir -p ./release-assets
           mv ./source/output/package.tgz ./release-assets/
-
-      - name: Upload .zip files to release
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          find ./release-assets -name "*.zip" -print0 | while IFS= read -r -d '' file; do
-            escaped_file=$(echo "$file" | sed 's/#/\\#/g')
-            echo "Uploading $escaped_file to release"
-            gh release upload "v0.1.0a" -- "$escaped_file" --clobber
-          done
-
 
 #            gh release upload ${{ github.event.release.tag_name }} "$file" --clobber
 
