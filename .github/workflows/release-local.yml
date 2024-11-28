@@ -92,23 +92,23 @@ jobs:
 
 
 
-      - name: Upload .zip files to release       
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}      
-        run: |
-          find ./release-assets -name "*.zip" -print0 | while IFS= read -r -d '' file; do
-            encoded_file=$(echo "$file" | base64)
-            echo "Uploading $(echo "$encoded_file" | base64 --decode) to release"
-            gh release upload "v0.1.0a" -- "$(echo "$encoded_file" | base64 --decode)" --clobber
-          done
+#      - name: Upload .zip files to release       
+#        env:
+#          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}      
+#        run: |
+#          find ./release-assets -name "*.zip" -print0 | while IFS= read -r -d '' file; do
+#            encoded_file=$(echo "$file" | base64)
+#            echo "Uploading $(echo "$encoded_file" | base64 --decode) to release"
+#            gh release upload "v0.1.0a" -- "$(echo "$encoded_file" | base64 --decode)" --clobber
+#          done
 #          docker run --rm -v $(pwd):/workspace -w /workspace hl7fhir/ig-publisher-base:latest java -Xmx4g -jar ./publisher.jar -go-publish -package-cache-folder $(pwd)/fhir-package-cache -ig . -source source -web $(pwd)/webroot -temp $(pwd)/temp -registry $(pwd)/ig-registry/fhir-ig-list.json -history $(pwd)/history-template -templates $(pwd)/webroot/templates
 
 
-      - name: Upload release assets
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          for file in ./release-assets/*; do
-            echo "Uploading $file to release"
-            gh release upload "v0.1.0a" -- "$file" --clobber
-          done
+#      - name: Upload release assets
+#        env:
+#          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#        run: |
+#          for file in ./release-assets/*; do
+#            echo "Uploading $file to release"
+#            gh release upload "v0.1.0a" -- "$file" --clobber
+#          done
