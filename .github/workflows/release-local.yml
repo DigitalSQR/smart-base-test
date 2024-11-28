@@ -66,15 +66,6 @@ jobs:
             java -Xmx4g -Dfile.encoding=UTF-8 -jar /workspace/publisher.jar -go-publish -package-cache-folder /workspace/fhir-package-cache -source /workspace/source -web /workspace/webroot -temp /workspace/temp -registry /workspace/ig-registry/fhir-ig-list.json -history /workspace/history-template -templates /workspace/webroot/templates
           "
 
-      - name: Upload .zip files to release        
-        run: |
-          find ./release-assets -name "*.zip" -print0 | while IFS= read -r -d '' file; do
-            encoded_file=$(echo "$file" | base64)
-            echo "Uploading $(echo "$encoded_file" | base64 --decode) to release"
-            gh release upload "v0.1.0a" -- "$(echo "$encoded_file" | base64 --decode)" --clobber
-          done
-#          docker run --rm -v $(pwd):/workspace -w /workspace hl7fhir/ig-publisher-base:latest java -Xmx4g -jar ./publisher.jar -go-publish -package-cache-folder $(pwd)/fhir-package-cache -ig . -source source -web $(pwd)/webroot -temp $(pwd)/temp -registry $(pwd)/ig-registry/fhir-ig-list.json -history $(pwd)/history-template -templates $(pwd)/webroot/templates
-
       - name: Exclude .zip files from gh-pages and move to release-assets
         run: |
           mkdir -p ./release-assets
@@ -91,6 +82,7 @@ jobs:
           publish_dir: ./deploy
           destination_dir: sitepreview
 
+
       - name: Upload release assets ( package.tgz)
         run: |
           mkdir -p ./release-assets
@@ -98,10 +90,23 @@ jobs:
 
 #            gh release upload ${{ github.event.release.tag_name }} "$file" --clobber
 
-      - name: Upload package.tgz to release
-        uses: actions/upload-release-asset@v1
-        with:
-          upload_url: ${{ github.event.release.upload_url }}
-          asset_path: ./release-assets/package.tgz
-          asset_name: package.tgz
-          asset_content_type: application/gzip
+
+
+      - name: Upload .zip files to release        
+        run: |
+          find ./release-assets -name "*.zip" -print0 | while IFS= read -r -d '' file; do
+            encoded_file=$(echo "$file" | base64)
+            echo "Uploading $(echo "$encoded_file" | base64 --decode) to release"
+            gh release upload "v0.1.0a" -- "$(echo "$encoded_file" | base64 --decode)" --clobber
+          done
+#          docker run --rm -v $(pwd):/workspace -w /workspace hl7fhir/ig-publisher-base:latest java -Xmx4g -jar ./publisher.jar -go-publish -package-cache-folder $(pwd)/fhir-package-cache -ig . -source source -web $(pwd)/webroot -temp $(pwd)/temp -registry $(pwd)/ig-registry/fhir-ig-list.json -history $(pwd)/history-template -templates $(pwd)/webroot/templates
+
+
+      - name: Upload release assets
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          for file in ./release-assets/*; do
+            echo "Uploading $file to release"
+            gh release upload "v0.1.0a" -- "$file" --clobber
+          done
