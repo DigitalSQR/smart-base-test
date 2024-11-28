@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "d7688d8f-261b-4c08-8c07-844cccfdb6ec-9",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/d7688d8f-261b-4c08-8c07-844cccfdb6ec-9",
+  "id" : "d3c2c210-0ff7-4241-bbeb-126439b11d4e-9",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/d3c2c210-0ff7-4241-bbeb-126439b11d4e-9",
   "name" : "IntersectionSimpleQuantityAndSimpleQuantity",
   "title" : "Intersection of null And null",
   "status" : "active",
-  "date" : "2024-11-28T19:55:32+00:00",
+  "date" : "2024-11-28T20:24:11+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "Quantity",
