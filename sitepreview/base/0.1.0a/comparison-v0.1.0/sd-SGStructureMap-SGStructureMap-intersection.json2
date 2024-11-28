@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "9a229cde-a0a4-4665-b1aa-ecd80aebbdbc-45",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/9a229cde-a0a4-4665-b1aa-ecd80aebbdbc-45",
+  "id" : "a09211c8-0f96-47b2-a66b-d94f326eb85c-45",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/a09211c8-0f96-47b2-a66b-d94f326eb85c-45",
   "name" : "IntersectionSGStructureMapAndSGStructureMap",
   "title" : "Intersection of SMART Guidelines StructureMap And SMART Guidelines StructureMap",
   "status" : "draft",
-  "date" : "2024-11-28T18:47:42+00:00",
+  "date" : "2024-11-28T18:59:15+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "StructureMap",
