@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "SGImplementationGuide"] ; # 
   fhir:title [ fhir:v "SMART Guidelines ImplementationGuide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-11-28T17:44:32+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-11-28T18:02:22+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "WHO"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "WHO" ] ;
