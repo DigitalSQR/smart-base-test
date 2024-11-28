@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "74adab6f-703a-47fd-858c-0e7a5a54c9ab-33",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/74adab6f-703a-47fd-858c-0e7a5a54c9ab-33",
+  "id" : "9a229cde-a0a4-4665-b1aa-ecd80aebbdbc-33",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/9a229cde-a0a4-4665-b1aa-ecd80aebbdbc-33",
   "name" : "IntersectionSGMeasureAndSGMeasure",
   "title" : "Intersection of SMART Guidelines Measure And SMART Guidelines Measure",
   "status" : "draft",
-  "date" : "2024-11-28T18:12:56+00:00",
+  "date" : "2024-11-28T18:47:42+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "Measure",
