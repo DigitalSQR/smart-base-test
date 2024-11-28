@@ -62,7 +62,7 @@ jobs:
         run: |
           docker run --rm -v $(pwd):/workspace -w /workspace hl7fhir/ig-publisher-base:latest /bin/sh -c "
             ls -la ./webroot &&
-            java -Xmx4g -Dfile.encoding=UTF-8 -jar ./publisher.jar -go-publish -package-cache-folder fhir-package-cache -source ./source -web ./webroot -temp ./temp -registry ./ig-registry/fhir-ig-list.json -history ./history-template -templates ./webroot/templates
+            java -Xmx4g -Dfile.encoding=UTF-8 -jar ./publisher.jar -go-publish -package-cache-folder fhir-package-cache -source source -web ./webroot -temp ./temp -registry ./ig-registry/fhir-ig-list.json -history ./history-template -templates ./webroot/templates
           "
 
       - name: Prepare deployment folder (excluding full-ig.zip)
