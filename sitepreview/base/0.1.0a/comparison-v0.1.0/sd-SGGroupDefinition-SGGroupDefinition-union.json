@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "3b50b6ed-8c57-4659-9d3a-0222e0f5b7c0-20",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/3b50b6ed-8c57-4659-9d3a-0222e0f5b7c0-20",
+  "id" : "ab819514-5fb1-44c5-a4be-05340bfe9d3b-20",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/ab819514-5fb1-44c5-a4be-05340bfe9d3b-20",
   "name" : "UnionSGGroupDefinitionAndSGGroupDefinition",
   "title" : "Union of WHO SMART Guidelines Group Definition And WHO SMART Guidelines Group Definition",
   "status" : "draft",
-  "date" : "2024-11-28T16:30:43+00:00",
+  "date" : "2024-11-28T17:43:23+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "Group",

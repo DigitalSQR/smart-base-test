@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "4ff3b9df-f3df-488e-a391-adb67aa44f91-3",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/4ff3b9df-f3df-488e-a391-adb67aa44f91-3",
+  "id" : "ddf6513c-95d8-499c-ace8-18a9e1df173e-3",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/ddf6513c-95d8-499c-ace8-18a9e1df173e-3",
   "name" : "IntersectionMarkdownAndMarkdown",
   "title" : "Intersection of null And null",
   "status" : "draft",
-  "date" : "2024-11-28T16:32:12+00:00",
+  "date" : "2024-11-28T17:44:48+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "Extension",
