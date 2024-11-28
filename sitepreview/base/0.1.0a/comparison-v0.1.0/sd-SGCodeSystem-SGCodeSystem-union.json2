@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "a09211c8-0f96-47b2-a66b-d94f326eb85c-14",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/a09211c8-0f96-47b2-a66b-d94f326eb85c-14",
+  "id" : "c23637a0-a445-49cc-a637-ad70ed31cc3f-14",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/c23637a0-a445-49cc-a637-ad70ed31cc3f-14",
   "name" : "UnionSGCodeSystemAndSGCodeSystem",
   "title" : "Union of SMART Guidelines CodeSystem And SMART Guidelines CodeSystem",
   "status" : "draft",
-  "date" : "2024-11-28T18:59:15+00:00",
+  "date" : "2024-11-28T19:10:51+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "CodeSystem",
