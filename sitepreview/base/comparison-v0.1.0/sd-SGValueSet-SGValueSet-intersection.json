@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "c70c8464-74d0-4d7e-bb34-08aa80ed2dd1-48",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/c70c8464-74d0-4d7e-bb34-08aa80ed2dd1-48",
+  "id" : "38b3220c-b8d0-4a93-8725-b020d8ece724-48",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/38b3220c-b8d0-4a93-8725-b020d8ece724-48",
   "name" : "IntersectionSGValueSetAndSGValueSet",
   "title" : "Intersection of SMART Guidelines ValueSet And SMART Guidelines ValueSet",
   "status" : "draft",
-  "date" : "2024-11-28T20:42:48+00:00",
+  "date" : "2024-11-28T22:35:13+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "ValueSet",
