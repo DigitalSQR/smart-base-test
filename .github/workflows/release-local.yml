@@ -92,6 +92,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          ls ./release-assets
           for file in ./release-assets/*.zip; do
             echo "Uploading $file to release"
             gh release upload "v0.1.0a" "$file" --clobber
