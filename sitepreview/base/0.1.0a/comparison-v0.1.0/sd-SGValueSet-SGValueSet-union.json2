@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "04c6786b-385e-4e5b-9a0f-c1a507f36b24-47",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/04c6786b-385e-4e5b-9a0f-c1a507f36b24-47",
+  "id" : "4497697d-37f6-487d-82d8-0f14b7fa5843-47",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/4497697d-37f6-487d-82d8-0f14b7fa5843-47",
   "name" : "UnionSGValueSetAndSGValueSet",
   "title" : "Union of SMART Guidelines ValueSet And SMART Guidelines ValueSet",
   "status" : "draft",
-  "date" : "2024-11-28T19:24:54+00:00",
+  "date" : "2024-11-28T19:42:51+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "ValueSet",
